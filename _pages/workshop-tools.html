@@ -1,0 +1,41 @@
+---
+permalink: /workshop-tools/
+layout: default
+---
+
+<div id="workshop-tools">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>
+                        {% t workshop-tools.title %}
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-tools">
+        <div class="container">
+            <div class="row justify-content-around">
+                {% capture features %}{% t workshop-tools.list %}{% endcapture %}
+                {% assign features = features | eval_array %}        
+                {%- for item in features -%}
+                {%- if item.column == 1 -%}
+                <div class="col-lg-5 col-md-6 tool text-center">
+                {%- else -%}
+                <div class="col-lg-11 col-md-12 tool text-center tool-2column">
+                {%- endif -%}
+                    <h2>
+                        {{item.title}}
+                    </h2>
+                    <p>
+                        {{item.content}}
+                    </p>
+                    <img class="img-fluid" src="/assets/images/{{item.img}}" alt="">
+                </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+</div>

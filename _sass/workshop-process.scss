@@ -1,0 +1,19 @@
+#workshop-process{
+    .process{
+        margin-bottom: 30px;
+        h2{
+            border: 3px solid;
+            display: inline-block;
+            width: 80px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            color: rgb(89,188,251);
+            @media (max-width: 575.89px) {
+                width: 50px;
+            }
+        }
+        h3{
+            color: rgb(89,188,251);
+        }
+    }
+}

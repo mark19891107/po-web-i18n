@@ -1,0 +1,60 @@
+---
+permalink: /collaborative-workshop/
+layout: default
+---
+
+<div id="workshop">
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <h2>
+                        {% t workshop.what.title %}
+                    </h2>
+                    {% capture features %}{% t workshop.what.content %}{% endcapture %}
+                    {{features | markdownify }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    {% capture features %}{% t workshop.intro %}{% endcapture %}
+                    {% assign features = features | eval_array %}
+
+                    {%- for item in features -%}
+                    <h3>
+                        {{item.title}}
+                    </h3>
+                    <p class="inter-section">
+                        {{item.content}}
+                    </p>
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-how">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="inter-section">
+                        {% t workshop.how.title%}
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-8 text-center text-sm-left">
+                    <p class="inter-section">
+                        {% t workshop.how.content%}
+                    </p>
+                    <a href="{{ 'workshop-process' | relative_url }}">{% t workshop.link-to-workshop-process%} <i class="fas fa-arrow-right"></i></a>
+                    <br>
+                    <a href="{{ 'workshop-tools' | relative_url }}">{% t workshop.link-to-workshop-tools%} <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
