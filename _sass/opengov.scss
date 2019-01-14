@@ -3,7 +3,6 @@
     $light-bg: rgb(246, 246, 246);
     $dark-bg: rgb(51, 51, 51);
     .hero {
-        height: 100vh;
         background: url(/assets/images/opengov-bg.png);
         background-position: center bottom;
         background-size: cover;
@@ -11,6 +10,7 @@
         background-color: rgba(255, 255, 255, 0.3);
         background-blend-mode: overlay;
         background-attachment: fixed;
+        padding-bottom: 80px;
         .hero-content {
             margin-top: calc(56px + 5vw);
             .highlight {

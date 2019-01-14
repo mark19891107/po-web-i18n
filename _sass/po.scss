@@ -3,10 +3,10 @@
     $light-bg: rgb(246, 246, 246);
     .hero {
         background: url(/assets/images/po-bg.png);
-        height: 100vh;
         background-position: left 50vw top 60px;
         background-size: contain;
         background-repeat: no-repeat;
+        padding-bottom: 80px;
         .row:nth-child(1) {
             padding-top: 150px;
         }
@@ -49,7 +49,7 @@
         }
     }
     hr {
-        border-top: 3px solid rgb(51,51,51);
+        border-top: 3px solid rgb(51, 51, 51);
     }
     .section-how {
         background: black;
@@ -67,10 +67,10 @@
             }
         }
     }
-    .section-link{
+    .section-link {
         background: $bg;
-        a{
-            &:hover{
+        a {
+            &:hover {
                 text-decoration: none;
             }
             color: black;
@@ -109,20 +109,23 @@
                     content: "";
                     border: .5px solid $bg;
                     position: absolute;
-                    height: calc(100% - 78px);
-                    margin-top: 27px;
+                    height: calc(75.4%);
+                    top: calc(12.5% - 12.5px);
                 }
             }
             .item {
                 color: $bg;
                 @media (min-width: 575.98px) {
-                    padding-left: 25px;
-                    display: flex;
+                    margin-left: 25px;
+                    display: table;
                     position: relative;
+                    background: yellow;
+                    margin-bottom: 25px;
+                    align-items: center;
                     &::before {
                         content: "";
-                        left: 0;
-                        top: 27px;
+                        top: 50%;
+                        left: -25px;
                         border: 0.5px solid $bg;
                         width: 30px;
                         position: absolute;
@@ -131,20 +134,25 @@
                 .title {
                     @media (min-width: 575.98px) {
                         padding: 15px;
-                        background: $bg;
+                        margin-bottom: 0px;
                         color: black;
                         line-height: 21px;
-                        border: 1px solid $bg;
-                        height: 54px;
+                        border: 1px solid #ff0; // height: 70px;
+                        width: 140px;
                     }
                 }
                 .detail {
                     @media (min-width: 575.98px) {
                         padding: 18px;
-                        margin-bottom: 25px;
+                        margin-bottom: 0px;
                         line-height: 16px;
                         flex: 1;
-                        border: 1px solid $bg;
+                        border: 1px solid #ff0;
+                        background: black;
+                        text-align: left;
+                        display: table-cell;
+                        vertical-align: middle;
+                        width: 100%;
                     }
                 }
             }
