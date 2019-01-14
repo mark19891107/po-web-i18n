@@ -1,14 +1,13 @@
 rvm: 2.4.1
 script:
-  - bundle exec jekyll build
+- bundle exec jekyll build
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  github-token: "$GITHUB_TOKEN"
   keep-history: true
   on:
     branch: master
 env:
   global:
-    - secure: "IAnxYMbRTFcLmCSHV/7OaG7Sd9/ggHUUmhdbu++gXIGH/cV70m1ZVjqMlvN5j69fDpaJkDR3VYqPwPCclkmQNLOFwrhb9ZCeNOtCLumsn9Z0UDIPQaGf2vx0MUh9vriBSx+mjsctCAwdOxRg1qNg/yvb75pyJ4vqbTJQlQYcgr+6fdC6NNzXsHknGaHRdx3z4jNhgbcnsnt73UbOADhxGb4u/b4m8CAzVxBmUV9rMwQUjFgtT/a3YXr4pDwo42MSwcK7YM+3PtIcUqeUBP4scIrjve+Uy+MmttwVyAvfJVG7v14wQRew2hQlcnmRuujLvMOyRtQa6maEKvYHhtZ0YBnwx7kH1whH09bxuaaYJ3Z9Vvw5AgV3t2BIaKbhF3S1BDC2YS0m1VIo6KujiWvEEJ1LLbkq07P2+ve4e0I0jgP499a5CnS4bp1Ru7jsTeE4Whsra2jv+HEl39LakFSr8IvY2edu15kJ+yxPSR/t/pX07thuAKUGLc7H4s7/Q3l1Ks9VRoWXOsuOxPjYwAOv94ezOAQGEJ42KfOldIPX27/ByrlcZslA6INL8v3Efgh3k25nE/QCW1vAdqc0Ged7jBO1P+FGW+As3e0NFKpAGtI4OgkHEzIXnHObFz2jbiMa7N0l/U2t1BS73lfSBasW+iYDQHrTyoeBU9YOehPkAiI="
-    
+    secure: Uihy9pPKB5KkeiDDaGGRnuXma+BNpLGn4oG0sAO5mrEKxnTj1elgOAEhhq/qj3T/67JT2P4KVHE3dxghsRdOdJP4B65ymrzXI1k/f5gU7FpL1w0V39elH9Jf8QlIQ65G0v3eNcvXwQl8HhgSDV/gtR1FQE82hCSP0XwWJtm/ARJVgSZSA/YYMIFvRyM4IblhXx4mxpeMIxdAAh3FIW+fnYXmk7i7NBY8XqIj/zxNDDt+S4XB/dWcP2cnM2sZNzzLEq/wV7/vyPU9sykJ9ifDDsRRxQo+4m7j3NQZzBcoVu/U3GagNkxUf/vMGHB8BuQUmX6M0uNStda8yIHMWsEPTJ2gagNW5FhtVuJvG80AhqKxvb3ETQoSjwB5htjScfoeSWj9NfLbcUlZqEJ9aw5sa5m5sclsI6qRMD++azdR0L8BQrQInpzjGOmduDh0UzU29Vc+7TkvTTJNqVq610BzOYeRPU6lYOJV+EPMQvu5X/XjQQDrBkOiy12Ih538SZ4ttPgeq7UadDxbO7QcUPLKU8B7oeAWUKf7jKMqcjYDgx4dK/Yx52b9CJXjNYZeROMbRHMMV1NJsbo44X7nFlEEmGxfE3B3Po0io3zq6jku5kPZrJkjCRf640fuVOoEyU5tfpsBMCb5HtxkHm/zCOPeVBU7YNiI9+nOJxue3TXeOyE=
