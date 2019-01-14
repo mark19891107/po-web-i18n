@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>開放政府聯絡人完全指南</title>
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-lg-flex" id="nav">
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/opengov">開放政府</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/po">聯絡人</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    協作會議
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/zh-TW/collaborative-workshop">會議簡介</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-process">會議流程</a>
+                    <a class="dropdown-item" href="/zh-TW/directions">聯絡人要點</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-tools">會議工具</a>
+                </div>
+            </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li> -->
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none d-xl-none" id="nav2">
+    <a class="navbar-brand" href="/zh-TW">EN</a>
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 30px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+
+        <div class="container">
+            <ul class="navbar-nav">
+                <a class="nav-link bold" href="/zh-TW/opengov">
+                    <li class="nav-item">
+                        開放政府
+                    </li>
+                </a>
+                <a class="nav-link bold" href="/zh-TW/po">
+                    <li class="nav-item">
+                        開放政府聯絡人
+                    </li>
+                </a>
+                <a class="nav-link light" href="/zh-TW/collaborative-workshop">
+                    <li class="nav-item">
+                        協作會議
+                    </li>
+                </a>
+                <a class="nav-link" href="/zh-TW/workshop-process">
+                    <li class="nav-item">
+                        會議流程
+                    </li>
+                </a>
+
+                <a class="nav-link" href="/zh-TW/directions">
+                    <li class="nav-item">
+                        聯絡人要點
+                    </li>
+                </a>
+
+                <a class="nav-link bold" href="/zh-TW/workshop-tools">
+                    <li class="nav-item">
+                        會議工具
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<script>
+    var scrollVal;
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 70) {
+                $("#nav").css("top", "-" + $(this).scrollTop() + "px");
+                $("#nav").css("background", "#FFFFFF00");
+                $("#nav").css("border-bottom", "none")
+            }
+            else if ($(this).scrollTop() > 70 && $(this).scrollTop() < 500) {
+                $("#nav").css("top", "-70px");
+                $("#nav").css("transition", "top 0.2s ease")
+            }
+            else {
+                $("#nav").css("top", "0px");
+                $("#nav").css("background", "#FFFFFF");
+                $("#nav").css("border-bottom", "2px solid lightgray")
+            }
+        });
+    });
+</script><div id="workshop-process">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>
+                        協作會議流程
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end">
+        <div class="container">
+            
+            <div class="process">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>
+                            1
+                        </h2>
+                        <h3>
+                            設定議題
+                        </h3>
+                    </div>
+                </div>
+                <div class="row justify-content-around"><div class="col-lg-4 col-md-6">
+                        <img class="img-fluid" src="/assets/images/1 _ 設定議題.png" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <p>
+                            在開放政府聯絡人的月會上，國發會提出建議票選的題目，供各部會PO票選。這些題目一般來自Join平台中超過5000人附議的提案，或由部會自行提案。到目前為止，具有「跨部會」、「多元意見分歧」、「社會輿論關注」、「經常被重複提案」等屬性的案子較容易被選中。
+                        </p>
+                    </div>
+                </div>
+            </div><div class="process">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>
+                            2
+                        </h2>
+                        <h3>
+                            確認分工
+                        </h3>
+                    </div>
+                </div>
+                <div class="row justify-content-around flex-row-reverse"><div class="col-lg-4 col-md-6">
+                        <img class="img-fluid" src="/assets/images/2 _ 確認分工.png" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <p>
+                            在工作分工的一開始，需要確認主協辦機關為何。主辦機關需要聯絡提案人、確認提案內容和會議日期，並於於Join平台上回應初步時程、邀請附議人，並於會後回應會議結果；協辦機關則需要出席相關會議，並把相關資料提供給主辦機關，以利會議進行。
+                        </p>
+                    </div>
+                </div>
+            </div><div class="process">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>
+                            3
+                        </h2>
+                        <h3>
+                            研究議題
+                        </h3>
+                    </div>
+                </div>
+                <div class="row justify-content-around"><div class="col-lg-4 col-md-6">
+                        <img class="img-fluid" src="/assets/images/3 _ 研究議題.png" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <p>
+                            主持團隊要在此時掌握議題脈絡。一開始，團隊會請主辦機關協助了解包含部會立場、有沒有關心這個議題的民意代表或民間團體、相關政策的研議情形，再彙整成議題分析表，接著請部會協助提供相關研究與資料，甚至是不同意見的好文章。
+                        </p>
+                    </div>
+                </div>
+            </div><div class="process">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>
+                            4
+                        </h2>
+                        <h3>
+                            定義核心問題
+                        </h3>
+                    </div>
+                </div>
+                <div class="row justify-content-around flex-row-reverse"><div class="col-lg-4 col-md-6">
+                        <img class="img-fluid" src="/assets/images/4 _ 定義核心問題.png" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <p>
+                            釐清議題脈絡後，就可以召開會前會。在會前會中，主持團隊與相關部會必須共同規劃協作會議流程，確認議題範圍，以及聚焦所需討論的面向。
+                        </p>
+                    </div>
+                </div>
+            </div><div class="process">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>
+                            5
+                        </h2>
+                        <h3>
+                            協作可能方案
+                        </h3>
+                    </div>
+                </div>
+                <div class="row justify-content-around"><div class="col-lg-4 col-md-6">
+                        <img class="img-fluid" src="/assets/images/5 _ 協作會議.png" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <p>
+                            在行政方面，協作會議前需要確認開會通知、出席名單、寄出議題手冊等行政工作，會議上也要確認座位、便當、茶水、直播等相關狀況是否到位。在議題方面，在會議之前要透過議題手冊等方式進行期待管理，會議上則要再次確認與會者對議題的了解，對齊彼此的認知，再針對真正關鍵的核心問題發想可能解法。
+                        </p>
+                    </div>
+                </div>
+            </div><div class="process">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>
+                            6
+                        </h2>
+                        <h3>
+                            納入政策
+                        </h3>
+                    </div>
+                </div>
+                <div class="row justify-content-around flex-row-reverse"><div class="col-lg-4 col-md-6">
+                        <img class="img-fluid" src="/assets/images/6 _ 納入政策參考.png" alt="">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <p>
+                            督導開放政府的政委會在協作會議之後，向行政院長及其他政務委員報告。如果協作會議所建議或發想的方向有可以參採的部份，就會回到行政院指揮體系執行。如果行政院沒有具體裁示或政策目標，就會由部會考量協作會議所收集到的多元意見是否有可以參採之處，如果有的話，就納入政策形成過程，依照現行的行政程序處理。
+                        </p>
+                    </div>
+                </div>
+            </div></div>
+    </div>
+</div><div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4">
+                <a href="">
+                    <img class="footer-logo" src="/assets/images/LOGO.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <div class="footer-text">
+                    
+                    <p>The website is built by PDIS</p>
+
+<p>We incubate and facilitate public digital innovation and service.</p>
+
+<p>本站原始碼：<a href="https://github.com/PDIS/">Github Repo.</a></p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 offset-md-4 offset-lg-0">
+                <div class="footer-links text-lg-right text-md-left">
+                    <a href="https://www.youtube.com/channel/UCExDf4hkbSU-pmJcyT_sDtg">
+                        <i class="fab fa-youtube-square fa-3x"></i>
+                    </a>
+                    <a href="https://github.com/pdis">
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com/taiwanpdis">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                    <a href="https://pdis.nat.gov.tw/zh-TW/blog/">
+                        <i class="fab fa-blogger fa-3x"></i>
+                    </a>
+                    <a href="https://issuu.com/pdis.tw/stacks">
+                        <svg class="ih-Logo-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Issuu"
+                            viewBox="0 0 35 35">
+                            <g class="ih-Logo-mark">
+                                <path d="M17.36 21.6c-2.433-.024-4.386-2.015-4.362-4.446.022-2.433 2.013-4.386 4.445-4.363 2.432.03 4.385 2.02 4.362 4.45-.023 2.43-2.013 4.39-4.446 4.36zm.122-13.103c-4.802-.045-8.733 3.813-8.78 8.616-.044 4.802 3.814 8.733 8.617 8.78 4.8.044 8.73-3.814 8.77-8.616.04-4.803-3.81-8.733-8.62-8.78z"></path>
+                                <path d="M5.53 17.02c.064-6.554 5.43-11.82 11.984-11.757 6.557.062 11.822 5.427 11.76 11.982-.063 6.556-5.428 11.82-11.983 11.76-6.55-.064-11.82-5.428-11.76-11.983zM17.278.16H1.6C.82.16.18.797.18 1.58v15.677c0 9.443 7.654 17.098 17.097 17.098 9.444 0 17.098-7.655 17.098-17.098C34.375 7.814 26.72.16 17.277.16z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></body>
+
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>開放政府聯絡人完全指南</title>
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-lg-flex" id="nav">
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/opengov">開放政府</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/po">聯絡人</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    協作會議
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/zh-TW/collaborative-workshop">會議簡介</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-process">會議流程</a>
+                    <a class="dropdown-item" href="/zh-TW/directions">聯絡人要點</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-tools">會議工具</a>
+                </div>
+            </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li> -->
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none d-xl-none" id="nav2">
+    <a class="navbar-brand" href="/zh-TW">EN</a>
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 30px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+
+        <div class="container">
+            <ul class="navbar-nav">
+                <a class="nav-link bold" href="/zh-TW/opengov">
+                    <li class="nav-item">
+                        開放政府
+                    </li>
+                </a>
+                <a class="nav-link bold" href="/zh-TW/po">
+                    <li class="nav-item">
+                        開放政府聯絡人
+                    </li>
+                </a>
+                <a class="nav-link light" href="/zh-TW/collaborative-workshop">
+                    <li class="nav-item">
+                        協作會議
+                    </li>
+                </a>
+                <a class="nav-link" href="/zh-TW/workshop-process">
+                    <li class="nav-item">
+                        會議流程
+                    </li>
+                </a>
+
+                <a class="nav-link" href="/zh-TW/directions">
+                    <li class="nav-item">
+                        聯絡人要點
+                    </li>
+                </a>
+
+                <a class="nav-link bold" href="/zh-TW/workshop-tools">
+                    <li class="nav-item">
+                        會議工具
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<script>
+    var scrollVal;
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 70) {
+                $("#nav").css("top", "-" + $(this).scrollTop() + "px");
+                $("#nav").css("background", "#FFFFFF00");
+                $("#nav").css("border-bottom", "none")
+            }
+            else if ($(this).scrollTop() > 70 && $(this).scrollTop() < 500) {
+                $("#nav").css("top", "-70px");
+                $("#nav").css("transition", "top 0.2s ease")
+            }
+            else {
+                $("#nav").css("top", "0px");
+                $("#nav").css("background", "#FFFFFF");
+                $("#nav").css("border-bottom", "2px solid lightgray")
+            }
+        });
+    });
+</script><div id="po">
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>
+                        什麼是開放政府聯絡人？
+                    </h1>
+                </div>
+                <div class="col-lg-5 col-md-8">
+                    <p>
+                        開放政府聯絡人的英文是 Participation Officer，我們都稱為「PO」。所有的 PO 形成一個緊密溝通的網絡（PO Network），搭起合作的橋樑，促使各部會之間合作。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-8">
+                    <div class="highlight">
+                        <h3>
+                            PO 如何產生？
+                        </h3>
+                        <p>
+                            PO 是依據「行政院及所屬各機關開放政府聯絡人實施要點」，由各機關指派至少 1 人來擔任，通常是公關、綜規、管考或資訊的同仁，也可以由這些人組成一個小組，共同擔任。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-what">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8">
+                    <h1 class="inter-section text-center">
+                        PO 要做什麼?
+                    </h1>
+                    <p>
+                        PO 最主要的工作，就是協助公部門聽取不特定大眾的意見，甚至合作規劃政策，不特定大眾最主要的來源可能是廣大網友，但也有可能是比較少上網的民眾。那麼 PO 該有什麼特質呢？我們建議 PO 要具備公眾溝通的熱誠、熟悉政策內容、善用網路工具。
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-3">
+                    <div class="inter-section"></div>
+                    <hr class="inter-section">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>
+                        PO 們需要具備哪些技能？
+                    </h3>
+                    <p class="text-center">
+                        PO 需要花一段時間學習以下的技術，也需要在實踐的過程中逐步內化開放政府的精神
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                
+                <div class="col-lg-3 col-md-5 point">
+                    <img src="/assets/images/2 _ 主持.png" alt="">
+                    <h3>
+                        主持
+                    </h3>
+                    <p>
+                        要討論政策的話，除了網路上的對話，也需要大家見面討論。但是如何在會議中協助大家互相理解，找到可行方案，需要專業的主持輔助。
+                    </p>
+                </div><div class="col-lg-3 col-md-5 point">
+                    <img src="/assets/images/2 _ 轉譯.png" alt="">
+                    <h3>
+                        轉譯
+                    </h3>
+                    <p>
+                        PO 就像翻譯米糕，協助公部門的同仁聽懂網友的話，也協助網友聽懂公部門的話，畢竟雙方如果對同一件事的理解不同，就談不上溝通了。
+                    </p>
+                </div><div class="col-lg-3 col-md-5 point">
+                    <img src="/assets/images/2 _ 紀錄.png" alt="">
+                    <h3>
+                        記錄
+                    </h3>
+                    <p>
+                        透過文字、影像或聲音，讓政策溝通過程公開透明，除了建立互信，也能追蹤和掌握政策進度，並讓更多人參與。就像透明廚房和產銷履歷，讓大家對食物更安心。
+                    </p>
+                </div></div>
+        </div>
+    </div>
+    <div class="section section-end section-how">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text text-sm-center text-lg-left">
+                    <h2 class="inter-section">
+                        PO Network <br class="d-none d-lg-block">怎麼運作？
+                    </h2>
+                    <p class="text-sm-center text-left">
+                        PO Network 在議題發生的時候要聯絡各方 ──
+                    </p>
+                </div>
+                <div class="col-lg-8 po-tree justify-content-sm-center justify-content-lg-end">
+                    <p class="root d-none d-lg-inline">
+                        PO Metwork
+                    </p>
+                    <div class="list">
+                        
+                        <div class="item">
+                            <h3 class="title">
+                                對內聯絡
+                            </h3>
+                            <p class="detail">
+                                整合內部意見
+                            </p>
+                        </div><div class="item">
+                            <h3 class="title">
+                                對外聯絡
+                            </h3>
+                            <p class="detail">
+                                瞭解社會大眾對這個議題的觀點與期待
+                            </p>
+                        </div><div class="item">
+                            <h3 class="title">
+                                縱向聯絡
+                            </h3>
+                            <p class="detail">
+                                上下各級機關的意見
+                            </p>
+                        </div><div class="item">
+                            <h3 class="title">
+                                橫向聯絡
+                            </h3>
+                            <p class="detail">
+                                相關部會的立場與執掌範圍
+                            </p>
+                        </div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-end">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 meeting-text">
+                    <h3 class="text-center">
+                        PO Network 運作機制 ： 三級會議
+                    </h3>
+                    <p class="text-center">
+                        三級會議是讓PO們互相聯繫的重要機制
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                
+                <div class="col-lg-3 col-md-5 point meeting">
+                    <h3>
+                        季會
+                    </h3>
+                    <p>
+                        每3-4個月，各部會PO的長官聚在一起，是一種向上管理的概念，讓這些長官更清楚PO做了什麼，需要什麼協助。
+                    </p>
+                </div><div class="col-lg-3 col-md-5 point meeting">
+                    <h3>
+                        月會
+                    </h3>
+                    <p>
+                        每個月，各部會PO都會聚在一起，聊一聊最近處理了什麼議題，接下來還想處理什麼議題。
+                    </p>
+                </div><div class="col-lg-3 col-md-5 point meeting">
+                    <h3>
+                        協作會議
+                    </h3>
+                    <p>
+                        每個月原則上兩場。議題經過 PO 月會投票後，獲選議題的主辦機關即可開始準備協作會議，其他PO也可以參加。
+                    </p>
+                </div></div>
+        </div>
+    </div>
+
+    <div class="section section-end section-qa" id="section-qa">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center inter-section">
+                        PO Network 小知識
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                    
+                    <div class="question">
+                        <h3>PO 執掌是什麼？</h3>
+                        <button data-toggle="collapse" data-target="#Q1" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q1" data-parent="#section-qa">
+                            發生利害關係複雜、多方意見紛歧的議題時，PO 可以在機關內部組成工作小組，或進一步協助機關首長，以開放政府的原則規劃適當的政策制定流程，讓不同的利害關係人可以參與其中，用更全面的觀點來完善政策，儘早確立政策的方向。
+                        </p>
+                    </div><div class="question">
+                        <h3>三級機關也有 PO 嗎？</h3>
+                        <button data-toggle="collapse" data-target="#Q3" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q3" data-parent="#section-qa">
+                            有喔，目前農委會、衛福部跟財政部有都有指派三級機關 PO。
+                        </p>
+                    </div><div class="question">
+                        <h3>PO 的類型分布？</h3>
+                        <button data-toggle="collapse" data-target="#Q5" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q5" data-parent="#section-qa">
+                            公務機關內有三種業務跟 PO 有關；管考或綜合性業務、熟悉相關工具的資訊以及負責溝通的公關。因此，部會通常指派相關業務同仁擔任。目前 PO 類型分布是：綜規 57%、資訊 25%、公關 18%。
+                        </p>
+                    </div><div class="question">
+                        <h3>PO 的任期？可以連任嗎？</h3>
+                        <button data-toggle="collapse" data-target="#Q7" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q7" data-parent="#section-qa">
+                            為了讓擔任 PO 的同仁，有輪調的機會，也讓部會內更多同仁有機會接觸到工作內容，所以建議部會可以每年更換 PO，但不強制。第一屆到第二屆連續擔任 PO 的同仁大約佔 57%，108 年起則是第三屆 PO。
+                        </p>
+                    </div><div class="question">
+                        <h3>開了幾場協作會議？</h3>
+                        <button data-toggle="collapse" data-target="#Q9" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q9" data-parent="#section-qa">
+                            每個月會票選出 1-3 個議題，目前共計 42 個協作議題。其中序號第 28、33、39 號都在會前會的階段決定不召開協作會議，所以截至107 年 12 月，共召開了 39 場。
+                        </p>
+                    </div></div>
+                <div class="col-md-6">
+                    
+                    <div class="question">
+                        <h3>幾個部會有 PO？</h3>
+                        <button data-toggle="collapse" data-target="#Q2" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q2" data-parent="#section-qa">
+                            行政院所屬的中央二級機關一共有 32 個，這些部會全部都有 PO。
+                        </p>
+                    </div><div class="question">
+                        <h3>總共有多少 PO？</h3>
+                        <button data-toggle="collapse" data-target="#Q4" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q4" data-parent="#section-qa">
+                            每個部會指派的 PO 數量不一樣，有的部會指派 1 位，有的部會指派 6 位，所以 32 個部會一共有 78 位 PO。
+                        </p>
+                    </div><div class="question">
+                        <h3>PO 的職等分布？</h3>
+                        <button data-toggle="collapse" data-target="#Q6" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q6" data-parent="#section-qa">
+                            行政院沒有要求特定職等的同仁才能擔任 PO，在這 78 位同仁當中，較高階的簡任官大約是 44%，中階的薦任同仁則佔56%。
+                        </p>
+                    </div><div class="question">
+                        <h3>開過幾次月會？</h3>
+                        <button data-toggle="collapse" data-target="#Q8" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q8" data-parent="#section-qa">
+                            第一次月會是 106 年 3 月，截至 107 年 12月一共開了 22 次。
+                        </p>
+                    </div></div>
+                <div class="col-12">
+                    <p class="text-right">統計截至 107 年 12 月</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-link">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <a href="/opengov">
+                        <i class="fas fa-arrow-left"></i> 開放政府
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <a href="/collaborative-workshop">
+                        協作會議 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4">
+                <a href="">
+                    <img class="footer-logo" src="/assets/images/LOGO.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <div class="footer-text">
+                    
+                    <p>The website is built by PDIS</p>
+
+<p>We incubate and facilitate public digital innovation and service.</p>
+
+<p>本站原始碼：<a href="https://github.com/PDIS/">Github Repo.</a></p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 offset-md-4 offset-lg-0">
+                <div class="footer-links text-lg-right text-md-left">
+                    <a href="https://www.youtube.com/channel/UCExDf4hkbSU-pmJcyT_sDtg">
+                        <i class="fab fa-youtube-square fa-3x"></i>
+                    </a>
+                    <a href="https://github.com/pdis">
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com/taiwanpdis">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                    <a href="https://pdis.nat.gov.tw/zh-TW/blog/">
+                        <i class="fab fa-blogger fa-3x"></i>
+                    </a>
+                    <a href="https://issuu.com/pdis.tw/stacks">
+                        <svg class="ih-Logo-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Issuu"
+                            viewBox="0 0 35 35">
+                            <g class="ih-Logo-mark">
+                                <path d="M17.36 21.6c-2.433-.024-4.386-2.015-4.362-4.446.022-2.433 2.013-4.386 4.445-4.363 2.432.03 4.385 2.02 4.362 4.45-.023 2.43-2.013 4.39-4.446 4.36zm.122-13.103c-4.802-.045-8.733 3.813-8.78 8.616-.044 4.802 3.814 8.733 8.617 8.78 4.8.044 8.73-3.814 8.77-8.616.04-4.803-3.81-8.733-8.62-8.78z"></path>
+                                <path d="M5.53 17.02c.064-6.554 5.43-11.82 11.984-11.757 6.557.062 11.822 5.427 11.76 11.982-.063 6.556-5.428 11.82-11.983 11.76-6.55-.064-11.82-5.428-11.76-11.983zM17.278.16H1.6C.82.16.18.797.18 1.58v15.677c0 9.443 7.654 17.098 17.097 17.098 9.444 0 17.098-7.655 17.098-17.098C34.375 7.814 26.72.16 17.277.16z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></body>
+
+</html>

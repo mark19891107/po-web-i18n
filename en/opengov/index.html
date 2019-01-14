@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>開放政府聯絡人完全指南</title>
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-lg-flex" id="nav">
+    <a class="navbar-brand" href="/en">
+        <img src="/assets/images/po-logo.png" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/en/opengov">開放政府</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/en/po">聯絡人</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    協作會議
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/en/collaborative-workshop">會議簡介</a>
+                    <a class="dropdown-item" href="/en/workshop-process">會議流程</a>
+                    <a class="dropdown-item" href="/en/directions">聯絡人要點</a>
+                    <a class="dropdown-item" href="/en/workshop-tools">會議工具</a>
+                </div>
+            </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li> -->
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none d-xl-none" id="nav2">
+    <a class="navbar-brand" href="/en">EN</a>
+    <a class="navbar-brand" href="/en">
+        <img src="/assets/images/po-logo.png" style="height: 30px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+
+        <div class="container">
+            <ul class="navbar-nav">
+                <a class="nav-link bold" href="/en/opengov">
+                    <li class="nav-item">
+                        開放政府
+                    </li>
+                </a>
+                <a class="nav-link bold" href="/en/po">
+                    <li class="nav-item">
+                        開放政府聯絡人
+                    </li>
+                </a>
+                <a class="nav-link light" href="/en/collaborative-workshop">
+                    <li class="nav-item">
+                        協作會議
+                    </li>
+                </a>
+                <a class="nav-link" href="/en/workshop-process">
+                    <li class="nav-item">
+                        會議流程
+                    </li>
+                </a>
+
+                <a class="nav-link" href="/en/directions">
+                    <li class="nav-item">
+                        聯絡人要點
+                    </li>
+                </a>
+
+                <a class="nav-link bold" href="/en/workshop-tools">
+                    <li class="nav-item">
+                        會議工具
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<script>
+    var scrollVal;
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 70) {
+                $("#nav").css("top", "-" + $(this).scrollTop() + "px");
+                $("#nav").css("background", "#FFFFFF00");
+                $("#nav").css("border-bottom", "none")
+            }
+            else if ($(this).scrollTop() > 70 && $(this).scrollTop() < 500) {
+                $("#nav").css("top", "-70px");
+                $("#nav").css("transition", "top 0.2s ease")
+            }
+            else {
+                $("#nav").css("top", "0px");
+                $("#nav").css("background", "#FFFFFF");
+                $("#nav").css("border-bottom", "2px solid lightgray")
+            }
+        });
+    });
+</script><div id="opengov">
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-3 col-lg-6 offset-md-2 col-md-8 hero-content">
+                    <h1 class="text-center">
+                        What is open government?
+                    </h1>
+                    <p>
+                        The open government was proposed by an international organization called OGP (Open Government Partnership)：
+                    </p>
+                    <p class="highlight">
+                        「......Adhering to open value and engaging with citizens to improve services, manage public resources, drive innovation and build safer communities. With the principle of transparency and open government, we will achieve prosperity, well-being and a society in line with human dignity in our own country and in an increasingly connected world.......」
+                    </p>
+                    <p>
+                        The four visions of an open government, that is, the future we look forward to, are a transparent government, a participating government, a responsible government, and a government that embraces it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-points">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8">
+                    <h1 class="inter-section text-center">
+                        Four elements of open government
+                    </h1>
+                    <p class="inter-section">
+                        What is an open government? To put it simply, in the process of formulating public policies, gradually putting the four elements of transparency, participation, responsibilities and tolerance into it is the way to open the government. But specifically, what should be done?
+                    </p>
+                </div>
+            </div>
+
+            
+            <div class="row justify-content-around"><div class="col-lg-4 col-md-5 point text-center">
+                        <img src="/assets/images/1 _ 透明.png" alt="">
+                        <h3>
+                            Transparency
+                        </h3>
+                        <p>
+                            Politics is a matter for everyone, and the policy process should allow everyone to clearly understand what happened. Friends in the public sector may be worried that if the outside world directly sees these undecided communication processes, will there be problems? In fact, the sooner the information is provided, the easier it is for the public to understand the preparations made by the public sector, the public sector can save the effort and time of repeated communication, and further reduce the communication burden of the public sector.
+                        </p>
+                    </div><div class="col-lg-4 col-md-5 point text-center">
+                        <img src="/assets/images/1 _ 參與.png" alt="">
+                        <h3>
+                            Participation
+                        </h3>
+                        <p>
+                            In the process of policy formation, the public has the opportunity to participate in discussions, express opinions, and even further influence the content of the policy. In this way, although the public sector needs to spend more time to build consensus, after the policy is formed, the risk of being opposed or even turning over is less.
+                        </p>
+                    </div></div><div class="row justify-content-around"><div class="col-lg-4 col-md-5 point text-center">
+                        <img src="/assets/images/1 _ 課責.png" alt="">
+                        <h3>
+                            Accountability
+                        </h3>
+                        <p>
+                            When the public has doubts about the policy formation process, can they review the opinion and who is proposing this opinion? What are the reasons for adoption or non-adoption? Through the mechanism of "accepting accountability and giving accountability", we will establish a culture of "responsibility" so that everyone can take the initiative to be responsible for their own opinions.
+                        </p>
+                    </div><div class="col-lg-4 col-md-5 point text-center">
+                        <img src="/assets/images/1 _ 涵容.png" alt="">
+                        <h3>
+                            Inclusion
+                        </h3>
+                        <p>
+                            Public issues involve a wide range of topics. If the public sector allows the multi-stakeholders directly affected by the policy to fully express their opinions and listen to each other during the discussion of the issue, they can collect as many opinions as possible and reduce policy occurrence. The possibility of error.
+                        </p>
+                    </div></div><div class="row justify-content-around">
+                <div class="col-md-3">
+                    <div class="inter-section"></div>
+                    <hr class="inter-section">
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-8 col-lg-6">
+                    <p>
+                        These four elements will be interlocked to achieve the vision of an open government. If there is only transparency, but there is no class responsibility; or if there is participation, but there is no tolerance, open government will have serious problems, open form, but no open spirit, become "open washing".
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-why">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8 text-center">
+                    <h1 class="inter-section">
+                        Why open government?
+                    </h1>
+                    <p>
+                        The higher the foundation of trust between the public sector and the public, the higher the opportunity for us to have sound public policies. On the other hand, if there is a lack of mutual trust, the discussion of the topic may be out of focus, and it may also cause public policy to vacillate and pay huge social costs. Therefore, <a class="text-highlight"> mutual trust between the public sector and the public is the ultimate goal of an open government. </a>
+                    </p>
+                    <img class="img-fluid" src="/assets/images/opengov-why.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-how">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>
+                        How to promote open government?
+                    </h1>
+                    <hr class="underline">
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <a class="text-highlight">To promote open government, we must start by changing the official culture. </a> If the civil servants who actually promote the policy can be used as locomotives, they will adopt a more open approach and a mentality output policy. In the long run, the policy can determine the direction as early as possible and can do things better. In other words, changing the official culture is like a sewer project. Although it is invisible, it will certainly feel a significant change in the long run.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-who">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-6 col-md-6">
+                    <h1>
+                        Who will promote open government?
+                    </h1>
+                    <hr class="underline">
+                    <p>
+                        Open government is everyone's business. Therefore, we need people who are willing to participate in the policy-driven process, civil servants who can share practical experience, and government officials who can take responsibility. Therefore, the "Partication Officer" assigned by each ministry is to change the official culture and deepen the "seeds" of the open government.
+                    </p>
+                    <a href="/po">
+                        Participation Officers <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $(window).scroll(function () {
+            console.log("rgba(255, 255, 255,"+(1 - $(window).scrollTop() / 250)+")")
+            $(".hero").css("background-color", "rgba(255, 255, 255,"+(0.3+$(window).scrollTop() / 200)+")");
+        });
+    });
+</script>
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4">
+                <a href="">
+                    <img class="footer-logo" src="/assets/images/LOGO.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <div class="footer-text">
+                    
+                    <p>The website is built by PDIS</p>
+
+<p>We incubate and facilitate public digital innovation and service.</p>
+
+<p>Source code of this site：<a href="https://github.com/PDIS/">Github Repo.</a></p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 offset-md-4 offset-lg-0">
+                <div class="footer-links text-lg-right text-md-left">
+                    <a href="https://www.youtube.com/channel/UCExDf4hkbSU-pmJcyT_sDtg">
+                        <i class="fab fa-youtube-square fa-3x"></i>
+                    </a>
+                    <a href="https://github.com/pdis">
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com/taiwanpdis">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                    <a href="https://pdis.nat.gov.tw/zh-TW/blog/">
+                        <i class="fab fa-blogger fa-3x"></i>
+                    </a>
+                    <a href="https://issuu.com/pdis.tw/stacks">
+                        <svg class="ih-Logo-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Issuu"
+                            viewBox="0 0 35 35">
+                            <g class="ih-Logo-mark">
+                                <path d="M17.36 21.6c-2.433-.024-4.386-2.015-4.362-4.446.022-2.433 2.013-4.386 4.445-4.363 2.432.03 4.385 2.02 4.362 4.45-.023 2.43-2.013 4.39-4.446 4.36zm.122-13.103c-4.802-.045-8.733 3.813-8.78 8.616-.044 4.802 3.814 8.733 8.617 8.78 4.8.044 8.73-3.814 8.77-8.616.04-4.803-3.81-8.733-8.62-8.78z"></path>
+                                <path d="M5.53 17.02c.064-6.554 5.43-11.82 11.984-11.757 6.557.062 11.822 5.427 11.76 11.982-.063 6.556-5.428 11.82-11.983 11.76-6.55-.064-11.82-5.428-11.76-11.983zM17.278.16H1.6C.82.16.18.797.18 1.58v15.677c0 9.443 7.654 17.098 17.097 17.098 9.444 0 17.098-7.655 17.098-17.098C34.375 7.814 26.72.16 17.277.16z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></body>
+
+</html>

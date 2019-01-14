@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>開放政府聯絡人完全指南</title>
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-lg-flex" id="nav">
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/opengov">開放政府</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/po">聯絡人</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    協作會議
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/zh-TW/collaborative-workshop">會議簡介</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-process">會議流程</a>
+                    <a class="dropdown-item" href="/zh-TW/directions">聯絡人要點</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-tools">會議工具</a>
+                </div>
+            </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li> -->
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none d-xl-none" id="nav2">
+    <a class="navbar-brand" href="/zh-TW">EN</a>
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 30px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+
+        <div class="container">
+            <ul class="navbar-nav">
+                <a class="nav-link bold" href="/zh-TW/opengov">
+                    <li class="nav-item">
+                        開放政府
+                    </li>
+                </a>
+                <a class="nav-link bold" href="/zh-TW/po">
+                    <li class="nav-item">
+                        開放政府聯絡人
+                    </li>
+                </a>
+                <a class="nav-link light" href="/zh-TW/collaborative-workshop">
+                    <li class="nav-item">
+                        協作會議
+                    </li>
+                </a>
+                <a class="nav-link" href="/zh-TW/workshop-process">
+                    <li class="nav-item">
+                        會議流程
+                    </li>
+                </a>
+
+                <a class="nav-link" href="/zh-TW/directions">
+                    <li class="nav-item">
+                        聯絡人要點
+                    </li>
+                </a>
+
+                <a class="nav-link bold" href="/zh-TW/workshop-tools">
+                    <li class="nav-item">
+                        會議工具
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<script>
+    var scrollVal;
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 70) {
+                $("#nav").css("top", "-" + $(this).scrollTop() + "px");
+                $("#nav").css("background", "#FFFFFF00");
+                $("#nav").css("border-bottom", "none")
+            }
+            else if ($(this).scrollTop() > 70 && $(this).scrollTop() < 500) {
+                $("#nav").css("top", "-70px");
+                $("#nav").css("transition", "top 0.2s ease")
+            }
+            else {
+                $("#nav").css("top", "0px");
+                $("#nav").css("background", "#FFFFFF");
+                $("#nav").css("border-bottom", "2px solid lightgray")
+            }
+        });
+    });
+</script><div id="workshop-tools">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>
+                        會議工具
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-tools">
+        <div class="container">
+            <div class="row justify-content-around">
+                
+                <div class="col-lg-5 col-md-6 tool text-center"><h2>
+                        逐字稿
+                    </h2>
+                    <p>
+                        逐字稿，是把會議中所有的發言盡可能完整地記錄下來。透過逐字稿，所有關心議題的人都能在會議後了解當天完整的討論過程。同時，也能看見不同利害關係人如何在會議中釐清彼此的需求。除了可以讓大家了解議題討論脈絡，公開上網的逐字稿也能減少未來針對同一議題重複討論的狀況；如實呈現的逐字稿，也能作為事後查驗的基礎，避免與會者被誤會為必定支持會議結論。
+                    </p>
+                    <img class="img-fluid" src="/assets/images/" alt="">
+                </div><div class="col-lg-5 col-md-6 tool text-center"><h2>
+                        直播
+                    </h2>
+                    <p>
+                        直播，是比逐字稿更為完整、即時的紀錄方式。透過公開影音，讓關心議題的人能即時參與、了解會議的進行狀況，也能將他們的意見匯集立即傳送回會議中，幫助更多有興趣的朋友即時加入。會後留在網上的直播影像，同樣能成為還原會議過程、呈現討論情境的資料，但需要花費較多時間觀看；值得注意的是，直播可能讓部分與會者有「作秀」的動機，而影響會議的進行。
+                    </p>
+                    <img class="img-fluid" src="/assets/images/" alt="">
+                </div><div class="col-lg-11 col-md-12 tool text-center tool-2column"><h2>
+                        工具單
+                    </h2>
+                    <p>
+                        創新工具、流程、思維能夠輔助與促進現有政策發展過程、日常事務處理、開會議程，另外，使用工具過程的記錄，也能夠幫助討論與決議過程的演算法公開，幫助意見歸納，形成開放透明的政策履歷，對於內部與外部的溝通，都會有實質的幫助。
+                    </p>
+                    <img class="img-fluid" src="/assets/images/toolsheet.png" alt="">
+                </div><div class="col-lg-5 col-md-6 tool text-center"><h2>
+                        sli.do
+                    </h2>
+                    <p>
+                        Sli.do是輔助會議的工具。在Sli.do上可以讓與會者匿名留言，協助不方便公開發言的人說出他們的想法；透過匿名的按讚機制，也能幫助大家聚焦到彼此都認為重要的問題，協助收攏問題。付費版的Sli.do還能讓大家展開討論，或是在會議上發起投票。
+                    </p>
+                    <img class="img-fluid" src="/assets/images/slido.png" alt="">
+                </div><div class="col-lg-5 col-md-6 tool text-center"><h2>
+                        pol.is
+                    </h2>
+                    <p>
+                        Pol.is是線上的意見收集工具，透過大眾提出自己的觀點、看法，並對其它人的觀點表態，Pol.is主要使用演算法來將大家的意見進行分群，方便用視覺化的方式看見網路意見分歧的幾個大群組，以及彼此之間都非常同意的觀點，進一步就能作為議程設定的參考。
+                    </p>
+                    <img class="img-fluid" src="/assets/images/polis.png" alt="">
+                </div></div>
+        </div>
+    </div>
+</div><div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4">
+                <a href="">
+                    <img class="footer-logo" src="/assets/images/LOGO.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <div class="footer-text">
+                    
+                    <p>The website is built by PDIS</p>
+
+<p>We incubate and facilitate public digital innovation and service.</p>
+
+<p>本站原始碼：<a href="https://github.com/PDIS/">Github Repo.</a></p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 offset-md-4 offset-lg-0">
+                <div class="footer-links text-lg-right text-md-left">
+                    <a href="https://www.youtube.com/channel/UCExDf4hkbSU-pmJcyT_sDtg">
+                        <i class="fab fa-youtube-square fa-3x"></i>
+                    </a>
+                    <a href="https://github.com/pdis">
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com/taiwanpdis">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                    <a href="https://pdis.nat.gov.tw/zh-TW/blog/">
+                        <i class="fab fa-blogger fa-3x"></i>
+                    </a>
+                    <a href="https://issuu.com/pdis.tw/stacks">
+                        <svg class="ih-Logo-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Issuu"
+                            viewBox="0 0 35 35">
+                            <g class="ih-Logo-mark">
+                                <path d="M17.36 21.6c-2.433-.024-4.386-2.015-4.362-4.446.022-2.433 2.013-4.386 4.445-4.363 2.432.03 4.385 2.02 4.362 4.45-.023 2.43-2.013 4.39-4.446 4.36zm.122-13.103c-4.802-.045-8.733 3.813-8.78 8.616-.044 4.802 3.814 8.733 8.617 8.78 4.8.044 8.73-3.814 8.77-8.616.04-4.803-3.81-8.733-8.62-8.78z"></path>
+                                <path d="M5.53 17.02c.064-6.554 5.43-11.82 11.984-11.757 6.557.062 11.822 5.427 11.76 11.982-.063 6.556-5.428 11.82-11.983 11.76-6.55-.064-11.82-5.428-11.76-11.983zM17.278.16H1.6C.82.16.18.797.18 1.58v15.677c0 9.443 7.654 17.098 17.097 17.098 9.444 0 17.098-7.655 17.098-17.098C34.375 7.814 26.72.16 17.277.16z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></body>
+
+</html>

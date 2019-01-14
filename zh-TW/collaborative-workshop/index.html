@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>開放政府聯絡人完全指南</title>
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-lg-flex" id="nav">
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/opengov">開放政府</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/po">聯絡人</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    協作會議
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/zh-TW/collaborative-workshop">會議簡介</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-process">會議流程</a>
+                    <a class="dropdown-item" href="/zh-TW/directions">聯絡人要點</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-tools">會議工具</a>
+                </div>
+            </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li> -->
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none d-xl-none" id="nav2">
+    <a class="navbar-brand" href="/zh-TW">EN</a>
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 30px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+
+        <div class="container">
+            <ul class="navbar-nav">
+                <a class="nav-link bold" href="/zh-TW/opengov">
+                    <li class="nav-item">
+                        開放政府
+                    </li>
+                </a>
+                <a class="nav-link bold" href="/zh-TW/po">
+                    <li class="nav-item">
+                        開放政府聯絡人
+                    </li>
+                </a>
+                <a class="nav-link light" href="/zh-TW/collaborative-workshop">
+                    <li class="nav-item">
+                        協作會議
+                    </li>
+                </a>
+                <a class="nav-link" href="/zh-TW/workshop-process">
+                    <li class="nav-item">
+                        會議流程
+                    </li>
+                </a>
+
+                <a class="nav-link" href="/zh-TW/directions">
+                    <li class="nav-item">
+                        聯絡人要點
+                    </li>
+                </a>
+
+                <a class="nav-link bold" href="/zh-TW/workshop-tools">
+                    <li class="nav-item">
+                        會議工具
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<script>
+    var scrollVal;
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 70) {
+                $("#nav").css("top", "-" + $(this).scrollTop() + "px");
+                $("#nav").css("background", "#FFFFFF00");
+                $("#nav").css("border-bottom", "none")
+            }
+            else if ($(this).scrollTop() > 70 && $(this).scrollTop() < 500) {
+                $("#nav").css("top", "-70px");
+                $("#nav").css("transition", "top 0.2s ease")
+            }
+            else {
+                $("#nav").css("top", "0px");
+                $("#nav").css("background", "#FFFFFF");
+                $("#nav").css("border-bottom", "2px solid lightgray")
+            }
+        });
+    });
+</script><div id="workshop">
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <h2>
+                        協作會議是什麼？
+                    </h2>
+                    
+                    <p>我們掌握了開放政府的理念 （透明、參與、課責、涵容），也有推動開放政府的種子（PO）以後，要怎麼促進公私協力呢？我們選擇的方式是「協作會議」。</p>
+
+<p>「協作」是什麼？「協作」是：針對某個議題，每個人的理念、目標都不相同，但是都想有所貢獻。因此，所有人一起討論、聆聽彼此，嘗試找到共識，並從此開展，發想解決方案。最終希望能達到「會議產出雖然不是我最想要的結果，但沒有違背我的理念，還能接受」的結果。</p>
+
+<p>實踐開放政府有各式各樣的方法和工具，我們只是設計出「協作會議」的形式，不同的議題屬性，可能也有不同的流程與形式。無論任何形式，最重要的仍然是透明、參與、課責及涵容這四個開放政府的精神。</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <h3>
+                        協作會議的目的
+                    </h3>
+                    <p class="inter-section">
+                        協作會議是一個定期會議平臺，希望協助每個公共議題的主辦機關聽取多元意見，創造機關和機關之間、機關和民眾間更多的對話機會。透過協作，公部門的朋友和大眾可以一起釐清議題，儘可能尋找可行的解決方案；也能讓各部會善用相關政策思維、設計與工具，並逐步熟悉開放政府精神。
+                    </p><h3>
+                        協作會議的議題
+                    </h3>
+                    <p class="inter-section">
+                        適合協作的議題有很多，包含「跨部會政策協調」、「資訊系統建置」、「政策前期意見收集」等各種不同的型態。根據議題的屬性，協作會議能達成的目標也不一定相同。有些議題牽涉價值觀的衝突，透過協作會議，能達到一定程度釐清，並讓決策點看見；技術含量高的議題，則可以透過協作會議，了解不同利害關係人的意見，並納入服務設計的過程。也有的議題是公部門已在規劃，但民眾不一定了解，協作會議就能讓民眾了解政策進度，並提供民間經驗供規劃參考。
+                    </p><h3>
+                        協作會議的挑戰
+                    </h3>
+                    <p class="inter-section">
+                        協作會議仍面臨不少挑戰。協作會議中，各方利害關係人之間的聆聽與討論相當寶貴，但如果要有充分的發言與對話，協作會議的與會者就不能太多，考慮到每個人能夠發言的時間，五個小時的會議，與會者最好不多於四十人；另外，協作會議最寶貴的對話過程，卻難以透過文字報告，或是口語轉達的方式傳遞。結果，沒有參與協作會議的朋友不一定能了解協作會議所有的討論過程，或是看到協作會議中的文字，出現較不一樣的想法，最終導致協作會議的成果不一定能被完整傳達，也不一定能獲得採納。
+                    </p></div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-how">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="inter-section">
+                        如何辦一場協作會議？
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-8 text-center text-sm-left">
+                    <p class="inter-section">
+                        舉辦協作會議不用需要很浩大的工程，但有一定的架構可以參考。我們鼓勵公部門朋友自行運用本站提供的流程與工具，自主辦理協作會議，以深入討論議題並與多方利害關係人共同尋求解法。
+                    </p>
+                    <a href="/zh-TW/workshop-process">會議流程 <i class="fas fa-arrow-right"></i></a>
+                    <br>
+                    <a href="/zh-TW/workshop-tools">會議工具 <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4">
+                <a href="">
+                    <img class="footer-logo" src="/assets/images/LOGO.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <div class="footer-text">
+                    
+                    <p>The website is built by PDIS</p>
+
+<p>We incubate and facilitate public digital innovation and service.</p>
+
+<p>本站原始碼：<a href="https://github.com/PDIS/">Github Repo.</a></p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 offset-md-4 offset-lg-0">
+                <div class="footer-links text-lg-right text-md-left">
+                    <a href="https://www.youtube.com/channel/UCExDf4hkbSU-pmJcyT_sDtg">
+                        <i class="fab fa-youtube-square fa-3x"></i>
+                    </a>
+                    <a href="https://github.com/pdis">
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com/taiwanpdis">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                    <a href="https://pdis.nat.gov.tw/zh-TW/blog/">
+                        <i class="fab fa-blogger fa-3x"></i>
+                    </a>
+                    <a href="https://issuu.com/pdis.tw/stacks">
+                        <svg class="ih-Logo-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Issuu"
+                            viewBox="0 0 35 35">
+                            <g class="ih-Logo-mark">
+                                <path d="M17.36 21.6c-2.433-.024-4.386-2.015-4.362-4.446.022-2.433 2.013-4.386 4.445-4.363 2.432.03 4.385 2.02 4.362 4.45-.023 2.43-2.013 4.39-4.446 4.36zm.122-13.103c-4.802-.045-8.733 3.813-8.78 8.616-.044 4.802 3.814 8.733 8.617 8.78 4.8.044 8.73-3.814 8.77-8.616.04-4.803-3.81-8.733-8.62-8.78z"></path>
+                                <path d="M5.53 17.02c.064-6.554 5.43-11.82 11.984-11.757 6.557.062 11.822 5.427 11.76 11.982-.063 6.556-5.428 11.82-11.983 11.76-6.55-.064-11.82-5.428-11.76-11.983zM17.278.16H1.6C.82.16.18.797.18 1.58v15.677c0 9.443 7.654 17.098 17.097 17.098 9.444 0 17.098-7.655 17.098-17.098C34.375 7.814 26.72.16 17.277.16z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></body>
+
+</html>

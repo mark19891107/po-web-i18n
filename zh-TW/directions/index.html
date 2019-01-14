@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>開放政府聯絡人完全指南</title>
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-lg-flex" id="nav">
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/opengov">開放政府</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/po">聯絡人</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    協作會議
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/zh-TW/collaborative-workshop">會議簡介</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-process">會議流程</a>
+                    <a class="dropdown-item" href="/zh-TW/directions">聯絡人要點</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-tools">會議工具</a>
+                </div>
+            </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li> -->
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none d-xl-none" id="nav2">
+    <a class="navbar-brand" href="/zh-TW">EN</a>
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 30px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+
+        <div class="container">
+            <ul class="navbar-nav">
+                <a class="nav-link bold" href="/zh-TW/opengov">
+                    <li class="nav-item">
+                        開放政府
+                    </li>
+                </a>
+                <a class="nav-link bold" href="/zh-TW/po">
+                    <li class="nav-item">
+                        開放政府聯絡人
+                    </li>
+                </a>
+                <a class="nav-link light" href="/zh-TW/collaborative-workshop">
+                    <li class="nav-item">
+                        協作會議
+                    </li>
+                </a>
+                <a class="nav-link" href="/zh-TW/workshop-process">
+                    <li class="nav-item">
+                        會議流程
+                    </li>
+                </a>
+
+                <a class="nav-link" href="/zh-TW/directions">
+                    <li class="nav-item">
+                        聯絡人要點
+                    </li>
+                </a>
+
+                <a class="nav-link bold" href="/zh-TW/workshop-tools">
+                    <li class="nav-item">
+                        會議工具
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<script>
+    var scrollVal;
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 70) {
+                $("#nav").css("top", "-" + $(this).scrollTop() + "px");
+                $("#nav").css("background", "#FFFFFF00");
+                $("#nav").css("border-bottom", "none")
+            }
+            else if ($(this).scrollTop() > 70 && $(this).scrollTop() < 500) {
+                $("#nav").css("top", "-70px");
+                $("#nav").css("transition", "top 0.2s ease")
+            }
+            else {
+                $("#nav").css("top", "0px");
+                $("#nav").css("background", "#FFFFFF");
+                $("#nav").css("border-bottom", "2px solid lightgray")
+            }
+        });
+    });
+</script><div id="directions">
+    <div class="section section-end">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>
+                        行政院及所屬各部會開放政府聯絡人實施要點
+                    </h2>
+                    <p class="text-center date">
+                        發布日期：106 年 12 月 4 日
+                    </p>
+                </div>
+            </div><div class="direction">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1">
+                        <a class="number">
+                            1
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="title">
+                            行政院（以下簡稱本院）為規範本院及所屬各機關開放政府聯絡人之實施運作，以落實開放政府理念，建立政府與社會各界之互信及夥伴關係，特訂定本要點。
+                        </p>
+                        <ol></ol>
+
+                        <div class="reason">
+                            <h5>
+                                立法理由
+                            </h5>
+                            <p>
+                                本要點訂定目的。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="direction">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1">
+                        <a class="number">
+                            2
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="title">
+                            本院指派政務委員一人督導本院及所屬各機關開放政府業務，並結合各機關開放政府聯絡人，建立聯繫機制。
+                        </p>
+                        <ol></ol>
+
+                        <div class="reason">
+                            <h5>
+                                立法理由
+                            </h5>
+                            <p>
+                                開放政府業務多具有跨領域性質，須整合各部會資源、人力，並貫通縱向 聯繫及橫向協調，以及時回應民意需求，爰明定指派政務委員督導。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="direction">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1">
+                        <a class="number">
+                            3
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="title">
+                            本院所屬二級機關或相當二級機關之獨立機關（以下簡稱二級機關）應指派適當層級且獲充分授權人員至少一人，擔任開放政府聯絡人，由機關副首長或資訊長負責督導，並得視業務需要，於所屬機關逐級指派人員擔任。
+                        </p>
+                        <ol></ol>
+
+                        <div class="reason">
+                            <h5>
+                                立法理由
+                            </h5>
+                            <p>
+                                本院所屬二級機關或相當二級機關之獨立機關應指派適當人員擔任開放政 府聯絡人，並由副首長或資訊長督導，以從適當政策高度，朝常態化、制 度化運作，逐步於公務機關內化開放政府之文化。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="direction">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1">
+                        <a class="number">
+                            4
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="title">
+                            各機關開放政府聯絡人由具有公眾溝通熱誠、熟悉政策業務、善用網路工具等特質之所屬公務人員擔任之。
+                        </p>
+                        <ol></ol>
+
+                        <div class="reason">
+                            <h5>
+                                立法理由
+                            </h5>
+                            <p>
+                                開放政府聯絡人職司與多方利害關係人（ Multi-stakeholder）對話溝通 ，具有熱誠，熟稔業務，能運用網路工具等特質，方利於與不特定人協作 討論。另為利業務運作與傳承，宜以所屬公務人員擔任。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="direction">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1">
+                        <a class="number">
+                            5
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="title">
+                            開放政府聯絡人得視議題需要彈性運作，並強化機關內部橫向溝通聯繫。各機關得視需求，結合國會聯絡、新聞聯絡、資訊、管考或相關業務人員，組成工作小組共同協作。
+                        </p>
+                        <ol></ol>
+
+                        <div class="reason">
+                            <h5>
+                                立法理由
+                            </h5>
+                            <p>
+                                開放政府工作面對瞬息多變之社會脈動，須能適應需要彈性運作，爰明定得結合所屬機關相關單位共同協作，以發揮整體力量。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="direction">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1">
+                        <a class="number">
+                            6
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="title">
+                            各機關於政策形成推動過程，應充分考量透明、參與、課責、涵容等開放政府基本原則。如涉及利害關係複雜、多方意見分歧或民眾參與熱烈之議題，開放政府聯絡人應協助各該機關首長評估是否應在政策規劃前期，秉持開放政府原則踐行適當之程序。前項議題非單一機關所得處理者，該機關開放政府聯絡人得主動聯繫其他機關開放政府聯絡人共同協作，或透過開放政府聯繫機制，陳請督導開放政府業務之政務委員召開跨部會協作會議。
+                        </p>
+                        <ol></ol>
+
+                        <div class="reason">
+                            <h5>
+                                立法理由
+                            </h5>
+                            <p>
+                                開放政府重在政策形成期適時導入，始能有效建構政府與民眾間之互信， 爰明定開放政府聯絡人之工作原則；更因現代政府面對綜合性挑戰，期以 開放政府聯絡人能跨越組織界限，勇於求助，共同協作。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="direction">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1">
+                        <a class="number">
+                            7
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="title">
+                            本院為強化開放政府聯繫機制，得定期或不定期召開下列會議
+                        </p>
+                        <ol><li>
+                                開放政府政策協調聯繫會議：每季召開一次為原則，邀集二級機關督導開放政府業務之副首長或資訊長出席，研商開放政府重要政策及推動方案。
+                            </li><li>
+                                開放政府聯絡人工作推動會議：每月召開一次為原則，邀集二級機關開放政府聯絡人出席，滾動檢討開放政府應推動之工作。
+                            </li><li>
+                                開放政府議題協作會議：視實際業務需要召開，邀集該議題之利害關係人、相關機關（構）、團體及開放政府聯絡人出席，釐清該議題之事實及問題焦點，探討可行之解決方式。
+                            </li></ol>
+
+                        <div class="reason">
+                            <h5>
+                                立法理由
+                            </h5>
+                            <p>
+                                開放政府自政策方向迄議題協作、自副首長至工作階層召開之各種會議之 任務與分工，以齊一各機關步調，落實開放政府工作。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="direction">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1">
+                        <a class="number">
+                            8
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="title">
+                            本院及國家發展委員會應協助各機關開放政府聯絡人，逐步培養下列專業職能
+                        </p>
+                        <ol><li>
+                                於政策規劃前期與多方利害關係人溝通，並透過開放資料、轉譯等方法，銜接政策規劃及常民語言。
+                            </li><li>
+                                於協作會議、焦點團體之諮詢或公聽會等程序，透過會議專業主持，提升議題討論聚焦程度。
+                            </li><li>
+                                透過文字、影像或聲音等專業記錄方法，公開政策溝通及形成過程。
+                            </li><li>
+                                熟悉網路工具之使用，以公民科技增進公眾理性對話。
+                            </li></ol>
+
+                        <div class="reason">
+                            <h5>
+                                立法理由
+                            </h5>
+                            <p>
+                                開放政府之工作過程，倚重轉譯、主持及記錄等專業，同時須掌握公民科 技之發展及民眾易瞭解論述，以增進多方對話及公眾參與，爰明定由本院 及國家發展委員會協助各機關開放政府聯絡人逐步養成專業職能。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="direction">
+                <div class="row justify-content-center">
+                    <div class="col-lg-1">
+                        <a class="number">
+                            9
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <p class="title">
+                            開放政府聯絡人推動開放政府業務著有績效者，各機關應予以適當獎勵
+                        </p>
+                        <ol></ol>
+
+                        <div class="reason">
+                            <h5>
+                                立法理由
+                            </h5>
+                            <p>
+                                各機關應適當獎勵開放政府聯絡人，以茲激勵。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+    </div>
+</div><div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4">
+                <a href="">
+                    <img class="footer-logo" src="/assets/images/LOGO.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <div class="footer-text">
+                    
+                    <p>The website is built by PDIS</p>
+
+<p>We incubate and facilitate public digital innovation and service.</p>
+
+<p>本站原始碼：<a href="https://github.com/PDIS/">Github Repo.</a></p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 offset-md-4 offset-lg-0">
+                <div class="footer-links text-lg-right text-md-left">
+                    <a href="https://www.youtube.com/channel/UCExDf4hkbSU-pmJcyT_sDtg">
+                        <i class="fab fa-youtube-square fa-3x"></i>
+                    </a>
+                    <a href="https://github.com/pdis">
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com/taiwanpdis">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                    <a href="https://pdis.nat.gov.tw/zh-TW/blog/">
+                        <i class="fab fa-blogger fa-3x"></i>
+                    </a>
+                    <a href="https://issuu.com/pdis.tw/stacks">
+                        <svg class="ih-Logo-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Issuu"
+                            viewBox="0 0 35 35">
+                            <g class="ih-Logo-mark">
+                                <path d="M17.36 21.6c-2.433-.024-4.386-2.015-4.362-4.446.022-2.433 2.013-4.386 4.445-4.363 2.432.03 4.385 2.02 4.362 4.45-.023 2.43-2.013 4.39-4.446 4.36zm.122-13.103c-4.802-.045-8.733 3.813-8.78 8.616-.044 4.802 3.814 8.733 8.617 8.78 4.8.044 8.73-3.814 8.77-8.616.04-4.803-3.81-8.733-8.62-8.78z"></path>
+                                <path d="M5.53 17.02c.064-6.554 5.43-11.82 11.984-11.757 6.557.062 11.822 5.427 11.76 11.982-.063 6.556-5.428 11.82-11.983 11.76-6.55-.064-11.82-5.428-11.76-11.983zM17.278.16H1.6C.82.16.18.797.18 1.58v15.677c0 9.443 7.654 17.098 17.097 17.098 9.444 0 17.098-7.655 17.098-17.098C34.375 7.814 26.72.16 17.277.16z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></body>
+
+</html>

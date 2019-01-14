@@ -1,6 +1,0 @@
-[submodule "_plugins/multiple-languages"]
-	path = _plugins/multiple-languages
-	url = https://github.com/mark19891107/jekyll-multiple-languages-plugin
-[submodule "multiple-languages"]
-	path = multiple-languages
-	url = https://github.com/mark19891107/jekyll-multiple-languages-plugin

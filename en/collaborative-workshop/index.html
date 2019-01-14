@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>開放政府聯絡人完全指南</title>
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-lg-flex" id="nav">
+    <a class="navbar-brand" href="/en">
+        <img src="/assets/images/po-logo.png" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/en/opengov">開放政府</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/en/po">聯絡人</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    協作會議
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/en/collaborative-workshop">會議簡介</a>
+                    <a class="dropdown-item" href="/en/workshop-process">會議流程</a>
+                    <a class="dropdown-item" href="/en/directions">聯絡人要點</a>
+                    <a class="dropdown-item" href="/en/workshop-tools">會議工具</a>
+                </div>
+            </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li> -->
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none d-xl-none" id="nav2">
+    <a class="navbar-brand" href="/en">EN</a>
+    <a class="navbar-brand" href="/en">
+        <img src="/assets/images/po-logo.png" style="height: 30px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+
+        <div class="container">
+            <ul class="navbar-nav">
+                <a class="nav-link bold" href="/en/opengov">
+                    <li class="nav-item">
+                        開放政府
+                    </li>
+                </a>
+                <a class="nav-link bold" href="/en/po">
+                    <li class="nav-item">
+                        開放政府聯絡人
+                    </li>
+                </a>
+                <a class="nav-link light" href="/en/collaborative-workshop">
+                    <li class="nav-item">
+                        協作會議
+                    </li>
+                </a>
+                <a class="nav-link" href="/en/workshop-process">
+                    <li class="nav-item">
+                        會議流程
+                    </li>
+                </a>
+
+                <a class="nav-link" href="/en/directions">
+                    <li class="nav-item">
+                        聯絡人要點
+                    </li>
+                </a>
+
+                <a class="nav-link bold" href="/en/workshop-tools">
+                    <li class="nav-item">
+                        會議工具
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<script>
+    var scrollVal;
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 70) {
+                $("#nav").css("top", "-" + $(this).scrollTop() + "px");
+                $("#nav").css("background", "#FFFFFF00");
+                $("#nav").css("border-bottom", "none")
+            }
+            else if ($(this).scrollTop() > 70 && $(this).scrollTop() < 500) {
+                $("#nav").css("top", "-70px");
+                $("#nav").css("transition", "top 0.2s ease")
+            }
+            else {
+                $("#nav").css("top", "0px");
+                $("#nav").css("background", "#FFFFFF");
+                $("#nav").css("border-bottom", "2px solid lightgray")
+            }
+        });
+    });
+</script><div id="workshop">
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6">
+                    <h2>
+                        What is Collaborative workshop?
+                    </h2>
+                    
+                    <p>We have mastered the concept of open government (transparency, participation, responsibilities, tolerance), and how to promote public-private partnerships after promoting the seeds of open government (PO). The way we choose is “collaborative meeting.”</p>
+
+<p>What is “collaboration”? “Collaboration” is：Everyone’s philosophy and goals are different for a certain topic, but they all want to contribute. Therefore, everyone discusses, listens to each other, tries to find a consensus, and from then on, thinks about solutions. In the end, I hope to achieve the result that “meeting output is not the result I want most, but it does not violate my philosophy and can be accepted.”</p>
+
+<p>There are various methods and tools for practicing open government. We only design the form of “collaborative meeting”. Different topic attributes may have different processes and forms. In any form, the most important thing is the spirit of the four open governments of transparency, participation, responsibility and tolerance.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <h3>
+                        Purpose of the collaborative workshop
+                    </h3>
+                    <p class="inter-section">
+                        The Collaborative Conference is a regular conference platform. It is hoped that it will assist the organisers of each public issue to listen to diverse opinions and create more opportunities for dialogue between agencies and agencies, between agencies and the public. Through collaboration, friends and the public in the public sector can work together to clarify issues and find possible solutions as much as possible. It will also enable the ministries to make good use of relevant policy thinking, design and tools, and gradually become familiar with the spirit of open government.
+                    </p><h3>
+                        Topics of collaborative workshop
+                    </h3>
+                    <p class="inter-section">
+                        There are many topics suitable for collaboration, including various types of inter-departmental policy coordination, "information system implementation" and "pre-policy opinion collection". Depending on the nature of the topic, the goals that collaborative workshop can achieve are not necessarily the same. Some issues involve conflicts of values. Through collaborative workshop, they can be clarified to a certain extent and made visible to decision-making points. On topics with high technical content, they can understand the opinions of different stakeholders through the collaborative meeting and incorporate them into the process of service design. There are also issues in which the public sector is already planning, but the public does not necessarily understand that collaborative workshop can inform the public about policy progress and provide folk experience for planning reference.
+                    </p><h3>
+                        Challenges of collaborative workshop
+                    </h3>
+                    <p class="inter-section">
+                        Collaborative workshop still face many challenges. In collaborative workshop, listening and discussion between interested parties is quite valuable, but if there is sufficient speech and dialogue, there should not be too many participants in the collaborative meeting, considering the time each person can speak, five hours. The number of participants is preferably no more than forty. In addition, the most valuable dialogue process of the collaborative meeting is difficult to convey through text reports or oral communication. As a result, friends who are not involved in a collaborative meeting may not be able to understand all the discussion processes of the collaborative meeting, or see the text in the collaborative meeting, and have different ideas, which may result in the results of the collaborative meeting not being fully conveyed. It may not be acceptable.
+                    </p></div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-how">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="inter-section">
+                        How to do a collaborative workshop?
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-8 text-center text-sm-left">
+                    <p class="inter-section">
+                        There is no need for a very large project to hold a collaborative meeting, but there is a certain structure for reference. We encourage our public sector friends to use their own processes and tools to conduct collaborative meetings to discuss issues and seek solutions with multiple stakeholders.
+                    </p>
+                    <a href="/en/workshop-process">Workshop process <i class="fas fa-arrow-right"></i></a>
+                    <br>
+                    <a href="/en/workshop-tools">Workshop tools <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4">
+                <a href="">
+                    <img class="footer-logo" src="/assets/images/LOGO.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <div class="footer-text">
+                    
+                    <p>The website is built by PDIS</p>
+
+<p>We incubate and facilitate public digital innovation and service.</p>
+
+<p>Source code of this site：<a href="https://github.com/PDIS/">Github Repo.</a></p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 offset-md-4 offset-lg-0">
+                <div class="footer-links text-lg-right text-md-left">
+                    <a href="https://www.youtube.com/channel/UCExDf4hkbSU-pmJcyT_sDtg">
+                        <i class="fab fa-youtube-square fa-3x"></i>
+                    </a>
+                    <a href="https://github.com/pdis">
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com/taiwanpdis">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                    <a href="https://pdis.nat.gov.tw/zh-TW/blog/">
+                        <i class="fab fa-blogger fa-3x"></i>
+                    </a>
+                    <a href="https://issuu.com/pdis.tw/stacks">
+                        <svg class="ih-Logo-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Issuu"
+                            viewBox="0 0 35 35">
+                            <g class="ih-Logo-mark">
+                                <path d="M17.36 21.6c-2.433-.024-4.386-2.015-4.362-4.446.022-2.433 2.013-4.386 4.445-4.363 2.432.03 4.385 2.02 4.362 4.45-.023 2.43-2.013 4.39-4.446 4.36zm.122-13.103c-4.802-.045-8.733 3.813-8.78 8.616-.044 4.802 3.814 8.733 8.617 8.78 4.8.044 8.73-3.814 8.77-8.616.04-4.803-3.81-8.733-8.62-8.78z"></path>
+                                <path d="M5.53 17.02c.064-6.554 5.43-11.82 11.984-11.757 6.557.062 11.822 5.427 11.76 11.982-.063 6.556-5.428 11.82-11.983 11.76-6.55-.064-11.82-5.428-11.76-11.983zM17.278.16H1.6C.82.16.18.797.18 1.58v15.677c0 9.443 7.654 17.098 17.097 17.098 9.444 0 17.098-7.655 17.098-17.098C34.375 7.814 26.72.16 17.277.16z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></body>
+
+</html>

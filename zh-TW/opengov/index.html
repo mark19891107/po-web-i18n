@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>開放政府聯絡人完全指南</title>
+</head>
+
+<body><nav class="navbar navbar-expand-lg navbar-light fixed-top d-none d-lg-flex" id="nav">
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/opengov">開放政府</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/zh-TW/po">聯絡人</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    協作會議
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="/zh-TW/collaborative-workshop">會議簡介</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-process">會議流程</a>
+                    <a class="dropdown-item" href="/zh-TW/directions">聯絡人要點</a>
+                    <a class="dropdown-item" href="/zh-TW/workshop-tools">會議工具</a>
+                </div>
+            </li>
+            <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li> -->
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-lg-none d-xl-none" id="nav2">
+    <a class="navbar-brand" href="/zh-TW">EN</a>
+    <a class="navbar-brand" href="/zh-TW">
+        <img src="/assets/images/po-logo.png" style="height: 30px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="mr-auto"></div>
+
+        <div class="container">
+            <ul class="navbar-nav">
+                <a class="nav-link bold" href="/zh-TW/opengov">
+                    <li class="nav-item">
+                        開放政府
+                    </li>
+                </a>
+                <a class="nav-link bold" href="/zh-TW/po">
+                    <li class="nav-item">
+                        開放政府聯絡人
+                    </li>
+                </a>
+                <a class="nav-link light" href="/zh-TW/collaborative-workshop">
+                    <li class="nav-item">
+                        協作會議
+                    </li>
+                </a>
+                <a class="nav-link" href="/zh-TW/workshop-process">
+                    <li class="nav-item">
+                        會議流程
+                    </li>
+                </a>
+
+                <a class="nav-link" href="/zh-TW/directions">
+                    <li class="nav-item">
+                        聯絡人要點
+                    </li>
+                </a>
+
+                <a class="nav-link bold" href="/zh-TW/workshop-tools">
+                    <li class="nav-item">
+                        會議工具
+                    </li>
+                </a>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+
+<script>
+    var scrollVal;
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 70) {
+                $("#nav").css("top", "-" + $(this).scrollTop() + "px");
+                $("#nav").css("background", "#FFFFFF00");
+                $("#nav").css("border-bottom", "none")
+            }
+            else if ($(this).scrollTop() > 70 && $(this).scrollTop() < 500) {
+                $("#nav").css("top", "-70px");
+                $("#nav").css("transition", "top 0.2s ease")
+            }
+            else {
+                $("#nav").css("top", "0px");
+                $("#nav").css("background", "#FFFFFF");
+                $("#nav").css("border-bottom", "2px solid lightgray")
+            }
+        });
+    });
+</script><div id="opengov">
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-3 col-lg-6 offset-md-2 col-md-8 hero-content">
+                    <h1 class="text-center">
+                        什麼是開放政府？
+                    </h1>
+                    <p>
+                        開放政府是由叫做OGP（Open Government Partnership，開放政府夥伴關係）的國際組織所提出來的：
+                    </p>
+                    <p class="highlight">
+                        「......秉持開放之價值與公民接觸，以改善服務、管理公共資源、推動創新及建構更安全之社區。懷抱透明及開放政府之原則，於自己國家與日益緊密連結的世界，實現繁榮、福祉及符合人類尊嚴之社會。......」
+                    </p>
+                    <p>
+                        開放政府的四大願景，也就是我們期待的未來，是一個透明的政府、參與的政府、課責的政府和涵容的政府。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-points">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8">
+                    <h1 class="inter-section text-center">
+                        開放政府的四個要素
+                    </h1>
+                    <p class="inter-section">
+                        什麼是開放政府呢？簡單來說，在制定公共政策的過程中，漸進地把透明、參與、課責及涵容四個要素放進進去，就是開放政府落實的方式。但具體來說，應該要怎麼做？
+                    </p>
+                </div>
+            </div>
+
+            
+            <div class="row justify-content-around"><div class="col-lg-4 col-md-5 point text-center">
+                        <img src="/assets/images/1 _ 透明.png" alt="">
+                        <h3>
+                            透明 (Transparency）
+                        </h3>
+                        <p>
+                            政治是眾人之事，政策過程應該讓眾人能清楚地知道「發生了什麼事」。公部門的朋友可能擔心，若是讓外界直接看到這些未定案的溝通過程，會不會發生問題？事實上，越早開始提供資料，大眾越容易瞭解公部門所做的準備，公部門就可省下重複溝通的心力和時間，進一步減少公部門的溝通負擔。
+                        </p>
+                    </div><div class="col-lg-4 col-md-5 point text-center">
+                        <img src="/assets/images/1 _ 參與.png" alt="">
+                        <h3>
+                            參與 (Participation）
+                        </h3>
+                        <p>
+                            政策形成的過程中，讓大眾有機會針對有興趣的議題參與討論、表達意見，甚至進一步影響政策的內容。這樣一來，雖然公部門需要花更多時間凝聚共識，但政策成形之後，被大眾反對、甚至翻盤的風險也較小。
+                        </p>
+                    </div></div><div class="row justify-content-around"><div class="col-lg-4 col-md-5 point text-center">
+                        <img src="/assets/images/1 _ 課責.png" alt="">
+                        <h3>
+                            課責（Accountability）
+                        </h3>
+                        <p>
+                            大眾對政策形成過程有疑慮時，可以回頭檢視這個意見是由誰提出？採納或不採納的原因為何？透過「接受問責、給出交代」的機制，建立「當責」的文化，讓每個人能主動對自己的意見負責。
+                        </p>
+                    </div><div class="col-lg-4 col-md-5 point text-center">
+                        <img src="/assets/images/1 _ 涵容.png" alt="">
+                        <h3>
+                            涵容（Inclusion）
+                        </h3>
+                        <p>
+                            公共議題涉及的面向很廣，如果在議題的討論過程中，公部門能讓受到政策直接影響的多方利害關係人充分表達意見，並彼此聆聽對話，就能收集盡可能多元的意見，減少政策發生錯誤的可能。
+                        </p>
+                    </div></div><div class="row justify-content-around">
+                <div class="col-md-3">
+                    <div class="inter-section"></div>
+                    <hr class="inter-section">
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-8 col-lg-6">
+                    <p>
+                        以上這四個要素會環環相扣，才能達成開放政府的願景。如果只有透明，卻沒有課責；或是有了參與，卻沒有涵容，開放政府就會發生嚴重的問題，徒有開放的形式，卻沒有開放的精神，成為「開放式洗白」（Open Washing）。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-why">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8 text-center">
+                    <h1 class="inter-section">
+                        為什麼需要開放政府？
+                    </h1>
+                    <p>
+                        公部門與大眾之間的信任基礎越高，我們便有更高的機會擁有完善的公共政策。反之，如果缺乏互信，議題討論就可能失焦，也可能造成公共政策搖擺不定、付出巨大的社會成本。所以，<a class="text-highlight">公部門與大眾間彼此互信，是開放政府的終極目標。</a>
+                    </p>
+                    <img class="img-fluid" src="/assets/images/opengov-why.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-how">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>
+                        如何推動開放政府？
+                    </h1>
+                    <hr class="underline">
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        <a class="text-highlight">推動開放政府，一定要從改變公務文化開始。</a>如果可以讓實際推動政策的公務員當火車頭，主動採用更開放的方法和心態產出政策，長期下來，政策便可儘早確定方向，也能把事情做得更好。也就是說，改變公務文化就像是下水道工程，雖然看不見，但是長期下來一定能感覺到顯著的變化。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-who">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-6 col-md-6">
+                    <h1>
+                        誰來推動開放政府？
+                    </h1>
+                    <hr class="underline">
+                    <p>
+                        開放政府是所有人的事，因此，我們需要願意參與政策推動過程的人民、能分享實務經驗的公務員、以及能夠承擔責任的政務官；所以，由各部會指派的「開放政府聯絡人」也就是 PO（Participation Officer），就是改變公務文化，深耕開放政府的「種子」。
+                    </p>
+                    <a href="/po">
+                        開放政府聯絡人 <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $(window).scroll(function () {
+            console.log("rgba(255, 255, 255,"+(1 - $(window).scrollTop() / 250)+")")
+            $(".hero").css("background-color", "rgba(255, 255, 255,"+(0.3+$(window).scrollTop() / 200)+")");
+        });
+    });
+</script>
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-4">
+                <a href="">
+                    <img class="footer-logo" src="/assets/images/LOGO.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <div class="footer-text">
+                    
+                    <p>The website is built by PDIS</p>
+
+<p>We incubate and facilitate public digital innovation and service.</p>
+
+<p>本站原始碼：<a href="https://github.com/PDIS/">Github Repo.</a></p>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 offset-md-4 offset-lg-0">
+                <div class="footer-links text-lg-right text-md-left">
+                    <a href="https://www.youtube.com/channel/UCExDf4hkbSU-pmJcyT_sDtg">
+                        <i class="fab fa-youtube-square fa-3x"></i>
+                    </a>
+                    <a href="https://github.com/pdis">
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </a>
+                    <a href="https://twitter.com/taiwanpdis">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                    <a href="https://pdis.nat.gov.tw/zh-TW/blog/">
+                        <i class="fab fa-blogger fa-3x"></i>
+                    </a>
+                    <a href="https://issuu.com/pdis.tw/stacks">
+                        <svg class="ih-Logo-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Issuu"
+                            viewBox="0 0 35 35">
+                            <g class="ih-Logo-mark">
+                                <path d="M17.36 21.6c-2.433-.024-4.386-2.015-4.362-4.446.022-2.433 2.013-4.386 4.445-4.363 2.432.03 4.385 2.02 4.362 4.45-.023 2.43-2.013 4.39-4.446 4.36zm.122-13.103c-4.802-.045-8.733 3.813-8.78 8.616-.044 4.802 3.814 8.733 8.617 8.78 4.8.044 8.73-3.814 8.77-8.616.04-4.803-3.81-8.733-8.62-8.78z"></path>
+                                <path d="M5.53 17.02c.064-6.554 5.43-11.82 11.984-11.757 6.557.062 11.822 5.427 11.76 11.982-.063 6.556-5.428 11.82-11.983 11.76-6.55-.064-11.82-5.428-11.76-11.983zM17.278.16H1.6C.82.16.18.797.18 1.58v15.677c0 9.443 7.654 17.098 17.097 17.098 9.444 0 17.098-7.655 17.098-17.098C34.375 7.814 26.72.16 17.277.16z"></path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></body>
+
+</html>
