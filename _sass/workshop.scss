@@ -1,0 +1,70 @@
+#workshop{
+    .hero {
+        background: url(/assets/images/workshop-bg.png);
+        // height: 100vh;
+        background-position: right bottom -40px;
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        h2{
+            margin-bottom: 40px;
+        }
+        .row {
+            padding-top: 100px;
+        }
+        @media (max-width: 1200px) {
+            background-position: right center;
+        }
+        @media (max-width: 992px) {
+            height: auto;
+            background-position: center bottom;
+            padding-bottom: 300px;
+            background-size: 300px;
+        }
+        @media (max-width: 768px) {
+            padding-bottom: 50vw;
+            background-size: 50vw;
+            background-position: center bottom;
+        }
+    }
+    .section-what{
+        background: url(/assets/images/workshop-what.png);
+        background-position: left center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media (max-width: 991.98px) {
+            background-position: left -200px center;
+        }
+        @media (max-width: 767.98px) {
+            padding-bottom: 50vw;
+            background-size: 70vw;
+            background-position: center bottom;
+        }
+    }
+    .section-how{
+        background-color: rgb(122,201,252);
+        background-image: url(/assets/images/workshop-how.png);
+        background-position: right center;
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        a{
+            display: inline-block;
+            color: black;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 500px;
+            margin-bottom: 25px;
+            font-size: 24px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        @media (max-width: 991.98px) {
+            background-position: right bottom;
+        }
+        @media (max-width: 767.98px) {
+            padding-bottom: 50vw;
+            background-size: 70vw;
+            background-position: center bottom;
+        }
+    }
+}

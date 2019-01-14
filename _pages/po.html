@@ -1,0 +1,206 @@
+---
+layout: default
+permalink: /po/
+---
+
+<div id="po">
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>
+                        {% t po.what-is-po-network.title %}
+                    </h1>
+                </div>
+                <div class="col-lg-5 col-md-8">
+                    <p>
+                        {% t po.what-is-po-network.content %}
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-8">
+                    <div class="highlight">
+                        <h3>
+                            {% t po.po-network-build-up.title %}
+                        </h3>
+                        <p>
+                            {% t po.po-network-build-up.content %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-what">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-2 col-lg-8">
+                    <h1 class="inter-section text-center">
+                        {% t po.what-po-do.title %}
+                    </h1>
+                    <p>
+                        {% t po.what-po-do.content %}
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-3">
+                    <div class="inter-section"></div>
+                    <hr class="inter-section">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>
+                        {% t po.skills.title %}
+                    </h3>
+                    <p class="text-center">
+                        {% t po.skills.content %}
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                {% capture features %}{% t po.skills.list %}{% endcapture %}
+                {% assign features = features | eval_array %}
+                {%- for item in features -%}
+                <div class="col-lg-3 col-md-5 point">
+                    <img src="/assets/images/{{item.img}}" alt="">
+                    <h3>
+                        {{item.title }}
+                    </h3>
+                    <p>
+                        {{item.content }}
+                    </p>
+                </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-how">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text text-sm-center text-lg-left">
+                    <h2 class="inter-section">
+                        {% t po.how.title %}
+                    </h2>
+                    <p class="text-sm-center text-left">
+                        {% t po.how.subtitle %}
+                    </p>
+                </div>
+                <div class="col-lg-8 po-tree justify-content-sm-center justify-content-lg-end">
+                    <p class="root d-none d-lg-inline">
+                        {% t po.how.content.title %}
+                    </p>
+                    <div class="list">
+                        {% capture features %}{% t po.how.content.list %}{% endcapture %}
+                        {% assign features = features | eval_array %}
+                        {%- for item in features -%}
+                        <div class="item">
+                            <h3 class="title">
+                                {{item.title }}
+                            </h3>
+                            <p class="detail">
+                                {{item.content }}
+                            </p>
+                        </div>
+                        {%- endfor -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-end">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 meeting-text">
+                    <h3 class="text-center">
+                        {% t po.meetings.title %}
+                    </h3>
+                    <p class="text-center">
+                        {% t po.meetings.content %}
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                {% capture features %}{% t po.meetings.list %}{% endcapture %}
+                {% assign features = features | eval_array %}
+                {%- for item in features -%}
+                <div class="col-lg-3 col-md-5 point meeting">
+                    <h3>
+                        {{item.title }}
+                    </h3>
+                    <p>
+                        {{item.content }}
+                    </p>
+                </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-end section-qa" id="section-qa">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center inter-section">
+                        {% t po.qa.title %}
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                    {% capture features %}{% t po.qa.list %}{% endcapture %}
+                    {% assign features = features | eval_array %}
+                    {%- for qa in features -%}
+                    {% assign remainder = forloop.index | modulo: 2 %}
+                    {%- if remainder == 1 -%}
+                    <div class="question">
+                        <h3>{{qa.q }}</h3>
+                        <button data-toggle="collapse" data-target="#Q{{ forloop.index }}" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q{{ forloop.index  }}" data-parent="#section-qa">
+                            {{qa.a }}
+                        </p>
+                    </div>
+                    {%- endif -%}
+                    {%- endfor -%}
+                </div>
+                <div class="col-md-6">
+                    {% capture features %}{% t po.qa.list %}{% endcapture %}
+                    {% assign features = features | eval_array %}
+                    {%- for qa in features -%}
+                    {% assign remainder = forloop.index | modulo: 2 %}
+                    {%- if remainder == 0 -%}
+                    <div class="question">
+                        <h3>{{qa.q }}</h3>
+                        <button data-toggle="collapse" data-target="#Q{{ forloop.index  }}" aria-expanded="false">＋</button>
+                        <p class="collapse" id="Q{{ forloop.index  }}" data-parent="#section-qa">
+                            {{qa.a }}
+                        </p>
+                    </div>
+                    {%- endif -%}
+                    {%- endfor -%}
+                </div>
+                <div class="col-12">
+                    <p class="text-right">{% t po.qa.update %}</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="section section-end section-link">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <a href="/opengov">
+                        <i class="fas fa-arrow-left"></i> {% t po.link-to-opengov %}
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <a href="/collaborative-workshop">
+                        {% t po.link-to-workshop %} <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
