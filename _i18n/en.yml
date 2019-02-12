@@ -159,18 +159,57 @@ workshop-process:
     - title: Agenda Setting
       content: At the monthly meeting of the open government liaison, the National Development Council will propose the title of the vote for the PO votes of the ministries. These questions are generally from proposals approved by more than 5,000 people on the Join platform, or by the ministry. So far, cases with attributes such as "inter-departmental meeting", "different opinions disagreement", "social public opinion concern", and "often repeated proposals" have been easier to select.
       img: /assets/images/1 _ 設定議題.png
+      links:
+        - title: Join
+          link: https://join.gov.tw
+        - title: Slido Online Voting
+          link: https://slido.com
     - title: Delegation of Tasks and Responsibilities
       content: At the beginning of the division of work, it is necessary to confirm the main co-organizer. The organizer needs to contact the sponsor, confirm the content of the proposal and the date of the meeting, and respond to the initial schedule on the Join platform, invite the second party, and respond to the results of the meeting after the meeting; the co-organizers need to attend the relevant meeting and provide relevant information. To the organizer, the Eli meeting.
       img: /assets/images/2 _ 確認分工.png
     - title: Research
       content: The host team should master the topic context at this time. At the beginning, the team will ask the organisers to help them understand the situation of the representatives of the ministry, whether they have concerns about the issue, or the discussion of relevant policies, and then reorganize the issue analysis form. Then ask the ministry to help provide relevant research and Information, even good articles with different opinions.
       img: /assets/images/3 _ 研究議題.png
+      links:
+        - title: Issue Mapping Instruction
+          link: /assets/files/en/Issue Mapping Instruction_V7.5.docx
+        - title: Issue Mapping Instruction Online Platform
+          link: https://imi.pdis.tw/
+        - title: Stakeholder Map
+          link: /assets/files/en/Stakeholder Map.pdf
+        - title: Persona
+          link: /assets/files/zh-TW/人物誌.pdf
+
     - title: Core Problem Identification
       content: After clarifying the context of the issue, a pre-conference meeting can be held. In the pre-conference meeting, the host team and the relevant ministry must jointly plan the collaborative meeting process, confirm the scope of the topic, and focus on the aspects of the discussion.
       img: /assets/images/4 _ 定義核心問題.png
+      links:
+        - title: Challenge Statement
+          link: /assets/files/en/Challenge Statement.pdf
+        - title: Online Mind Map
+          link: https://realtimeboard.com/app/
+
     - title: Possible Solution Co-creation
       content: On the administrative side, before the collaborative meeting, it is necessary to confirm the administrative work such as the notice of the meeting, the list of attendance, and the issue of the issue manual. The meeting also needs to confirm whether the relevant conditions such as seat, lunch, tea, and live broadcast are in place. In terms of issues, expectation management should be carried out through the issue manual before the meeting. The meeting will reconfirm the participants' understanding of the issues, align each other's cognitions, and then think about possible solutions to the truly critical core issues.
       img: /assets/images/5 _ 協作會議.png
+      links:
+        - title: Idea Development sheet A
+          link: /assets/files/en/Idea Development sheet A.pdf
+        - title: Idea Development sheet B
+          link: /assets/files/en/Idea Development sheet B.pdf
+        # - title: Service Blueprint
+        #   link: /assets/files/zh-TW/人物誌.pdf
+        # - title: User Journey Map
+        #   link: /assets/files/zh-TW/人物誌.pdf
+        - title: Transcript
+          link: https://sayit.pdis.nat.gov.tw/speeches
+        - title: Live Stream
+          link: https://www.youtube.com/channel/UCExDf4hkbSU-pmJcyT_sDtg/search?query=%E5%8D%94%E4%BD%9C%E6%9C%83%E8%AD%B0
+        - title: Online Mind Map
+          link: https://realtimeboard.com/app/
+        - title: Slido
+          link: https://slido.com
+
     - title: Policy Consideration
       content: The Political Committee, which supervises the opening of the government, reports to the Executive Dean and other political council members after the collaborative meeting. If there is a part in the direction suggested or thought of in the collaborative meeting, it will return to the executive system of the Executive Yuan. If the Executive Yuan does not have specific rulings or policy objectives, then the ministry will consider whether the diversified opinions collected by the Collaborative Meetings can be used for participation. If any, it will be incorporated into the policy formation process and handled in accordance with the current administrative procedures.
       img: /assets/images/6 _ 納入政策參考.png
