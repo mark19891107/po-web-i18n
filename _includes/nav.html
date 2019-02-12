@@ -12,8 +12,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ 'opengov' | relative_url }}">開放政府</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ 'po'| relative_url }}">聯絡人</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    聯絡人
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{{ 'po'| relative_url }}">聯絡人簡介</a>
+                    <a class="dropdown-item" href="{{ 'directions'| relative_url }}">聯絡人要點</a>
+                </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
@@ -21,10 +28,9 @@
                     協作會議
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="{{ 'collaborative-workshop'| relative_url }}">會議簡介</a>
-                    <a class="dropdown-item" href="{{ 'workshop-process'| relative_url }}">會議流程</a>
-                    <a class="dropdown-item" href="{{ 'directions'| relative_url }}">聯絡人要點</a>
-                    <a class="dropdown-item" href="{{ 'workshop-tools'| relative_url }}">會議工具</a>
+                    <a class="dropdown-item" href="{{ 'collaborative-meeting'| relative_url }}">會議簡介</a>
+                    <a class="dropdown-item" href="{{ 'meeting-process'| relative_url }}">會議流程</a>
+                    <a class="dropdown-item" href="{{ 'meeting-tools'| relative_url }}">會議工具</a>
                 </div>
             </li>
             <!-- <li class="nav-item">
@@ -53,29 +59,32 @@
                         開放政府
                     </li>
                 </a>
-                <a class="nav-link bold" href="{{ 'po'| relative_url }}">
+                <a class="nav-link light" href="{{ 'po'| relative_url }}">
                     <li class="nav-item">
                         開放政府聯絡人
                     </li>
                 </a>
-                <a class="nav-link light" href="{{ 'collaborative-workshop'| relative_url }}">
-                    <li class="nav-item">
-                        協作會議
-                    </li>
-                </a>
-                <a class="nav-link" href="{{ 'workshop-process'| relative_url }}">
-                    <li class="nav-item">
-                        會議流程
-                    </li>
-                </a>
 
-                <a class="nav-link" href="{{ 'directions'| relative_url }}">
+                <a class="nav-link bold" href="{{ 'directions'| relative_url }}">
                     <li class="nav-item">
                         聯絡人要點
                     </li>
                 </a>
 
-                <a class="nav-link bold" href="{{ 'workshop-tools'| relative_url }}">
+                <a class="nav-link light" href="{{ 'collaborative-meeting'| relative_url }}">
+                    <li class="nav-item">
+                        協作會議
+                    </li>
+                </a>
+                <a class="nav-link" href="{{ 'meeting-process'| relative_url }}">
+                    <li class="nav-item">
+                        會議流程
+                    </li>
+                </a>
+
+                
+
+                <a class="nav-link bold" href="{{ 'meeting-tools'| relative_url }}">
                     <li class="nav-item">
                         會議工具
                     </li>
