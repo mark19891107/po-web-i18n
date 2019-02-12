@@ -159,18 +159,59 @@ workshop-process:
     - title: 設定議題
       content: 在開放政府聯絡人的月會上，國發會提出建議票選的題目，供各部會PO票選。這些題目一般來自Join平台中超過5000人附議的提案，或由部會自行提案。到目前為止，具有「跨部會」、「多元意見分歧」、「社會輿論關注」、「經常被重複提案」等屬性的案子較容易被選中。
       img: /assets/images/1 _ 設定議題.png
+      links:
+        - title: Join 平台
+          link: https://join.gov.tw
+        - title: Slido 線上投票
+          link: https://slido.com
+
     - title: 確認分工
       content: 在工作分工的一開始，需要確認主協辦機關為何。主辦機關需要聯絡提案人、確認提案內容和會議日期，並於於Join平台上回應初步時程、邀請附議人，並於會後回應會議結果；協辦機關則需要出席相關會議，並把相關資料提供給主辦機關，以利會議進行。 
       img: /assets/images/2 _ 確認分工.png
     - title: 研究議題
       content: 主持團隊要在此時掌握議題脈絡。一開始，團隊會請主辦機關協助了解包含部會立場、有沒有關心這個議題的民意代表或民間團體、相關政策的研議情形，再彙整成議題分析表，接著請部會協助提供相關研究與資料，甚至是不同意見的好文章。
       img: /assets/images/3 _ 研究議題.png
+      links:
+        - title: 議題分析表
+          link: /assets/files/zh-TW/議題分析表V7.4.docx
+        - title: 議題分析數位平台
+          link: https://imi.pdis.tw/
+        - title: 利害關係人盤點圖
+          link: /assets/files/zh-TW/利害關係圖.pdf
+        - title: 人物誌
+          link: /assets/files/zh-TW/人物誌.pdf
+        
+
     - title: 定義核心問題
       content: 釐清議題脈絡後，就可以召開會前會。在會前會中，主持團隊與相關部會必須共同規劃協作會議流程，確認議題範圍，以及聚焦所需討論的面向。
       img: /assets/images/4 _ 定義核心問題.png
+      links:
+        - title: 挑戰句
+          link: /assets/files/zh-TW/挑戰句.pdf
+        - title: 線上心智圖
+          link: https://realtimeboard.com/app/
+
     - title: 協作可能方案
       content: 在行政方面，協作會議前需要確認開會通知、出席名單、寄出議題手冊等行政工作，會議上也要確認座位、便當、茶水、直播等相關狀況是否到位。在議題方面，在會議之前要透過議題手冊等方式進行期待管理，會議上則要再次確認與會者對議題的了解，對齊彼此的認知，再針對真正關鍵的核心問題發想可能解法。
       img: /assets/images/5 _ 協作會議.png
+      links:
+        - title: 概念發展單 A
+          link: /assets/files/zh-TW/概念發展單A.pdf
+        - title: 概念發展單 B
+          link: /assets/files/zh-TW/概念發展單B.pdf
+        # - title: 服務藍圖
+        #   link: /assets/files/zh-TW/人物誌.pdf
+        # - title: 使用者旅程地圖
+        #   link: /assets/files/zh-TW/人物誌.pdf
+        - title: 逐字紀錄
+          link: https://sayit.pdis.nat.gov.tw/speeches
+        - title: 直播
+          link: https://www.youtube.com/channel/UCExDf4hkbSU-pmJcyT_sDtg/search?query=%E5%8D%94%E4%BD%9C%E6%9C%83%E8%AD%B0
+        - title: 線上心智圖
+          link: https://realtimeboard.com/app/
+        - title: Slido 線上/匿名參與
+          link: https://slido.com
+
     - title: 納入政策
       content: 督導開放政府的政委會在協作會議之後，向行政院長及其他政務委員報告。如果協作會議所建議或發想的方向有可以參採的部份，就會回到行政院指揮體系執行。如果行政院沒有具體裁示或政策目標，就會由部會考量協作會議所收集到的多元意見是否有可以參採之處，如果有的話，就納入政策形成過程，依照現行的行政程序處理。
       img: /assets/images/6 _ 納入政策參考.png

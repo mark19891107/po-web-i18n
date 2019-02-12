@@ -44,6 +44,9 @@ layout: default
                         <p>
                             {{process.content}}
                         </p>
+                        {% for link in process.links %}
+                        <a target="_blank" href="{{link.link}}">{{link.title}}</a><br>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
